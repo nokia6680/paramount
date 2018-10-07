@@ -484,6 +484,139 @@
 			<p class="footer-copyright__description">Все права защищены. Копирование материалов без согласования запрещено.</p>
 		</div>
 	</footer>
+	<!--Всплывающие окна, попапы-->
+
+	<!--Окно записи-->
+	<div class="video-player">
+		<button class="video-player__close" type="button"></button>
+		<!--Блок с видео и управлением-->
+		<div class="video-player__window player-window">
+			<video class="player-window__content" width="100%" poster="img/video-1.jpg">
+				<source src="video/1.ogv" type='video/ogg; codecs="theora, vorbis"'>
+				<source src="video/2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				<source src="video/3.webm" type='video/webm; codecs="vp8, vorbis"'>
+			</video>
+			<span class="player-window__reddot"></span>
+			<div class="player-window__controls player-controls">
+				<!--Группа кнопок проигрывание, пауза, запись, стоп-->
+				<div class="player-controls__main">
+					<button class="player-controls__play" type="button" id="btn-play"></button>
+					<button class="player-controls__pause" type="button" id="btn-pause"></button>
+					<button class="player-controls__rec" type="button" id="btn-rec"></button>
+					<button class="player-controls__stop" type="button" id="btn-stop"></button>
+				</div>
+				<!--Группа навигационных кнопок перемотки-->
+				<div class="player-controls__nav">
+					<button class="player-controls__rewind" type="button" id="btn-rew"></button>
+					<button class="player-controls__forward" type="button" id="btn-fwd"></button>
+				</div>
+				<!--Отдельная кнопка записи-->
+				<div class="player-controls__record">
+					<button class="player-controls__rec player-controls__rec--red" type="button" id="btn-rec-red"></button>
+				</div>
+				<!--Отдельная кнопка сохранения-->
+				<div class="player-controls__save">
+					<button class="player-controls__save" type="button" id="btn-save"></button>
+				</div>
+			</div>
+		</div>
+		<!--Блок списка фраз-->
+		<div class="video-player__phrase player-phrase">
+			<ul class="player-phrase__list phrase-list">
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+				<li class="phrase-list__item phrase-item">
+					<b class="phrase-item__time">00:03&mdash;00:05</b>
+					<span class="phrase-item__text">Алло?</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--Попап подтверждения окончания записи-->
+	<div class="popup-main">
+		<button class="popup-main__close" type="button"></button>
+		<!--Контент шаг 1-->
+		<div class="popup-main__finish popup-finish">
+			<h2 class="popup-finish__title">
+				<b class="popup-finish__left">Запись</b>
+				<b class="popup-finish__right">готова?</b>
+			</h2>
+			<div class="popup-finish__controls">
+				<button class="popup-finish__continue" type="button">Нет, продолжить редактирование</button>
+				<button class="popup-finish__submit" type="submit">Да, отправить на модерацию</button>
+			</div>
+		</div>
+		<!--Контент шаг 2-->
+		<div class="popup-main__details popup-details">
+			<form class="popup-details__form details-form" method="post" action="#">
+				<label class="details-form__label" for="author-name">Ваше имя</label>
+				<input type="text" class="details-form__input" name="author-name" id="author-name" />
+			</form>
+			<div class="popup-details__controls">
+				<button class="popup-details__back" type="button">Назад</button>
+				<button class="popup-details__send" type="submit">Отправить</button>
+			</div>
+		</div>
+		<!--Контент шаг 3-->
+		<div class="popup-main__save popup-save">
+			<h2 class="popup-save__title">
+				<b class="popup-save__right">Сохранить</b>
+				<b class="popup-save__left">изменения?</b>
+			</h2>
+			<div class="popup-save__controls">
+				<button class="popup-save__discard popup-save__discard--red" type="button">Не сохранять</button>
+				<button class="popup-save__cancel" type="button">Отмена</button>
+				<button class="popup-save__save" type="button">Сохранить</button>
+			</div>
+		</div>
+	</div>
 	<script src="../js/script.js"></script>
 </body>
 
