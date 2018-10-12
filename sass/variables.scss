@@ -10,44 +10,19 @@ $hd: 1920px;
 $fhd: 2560px;
 
 
-$main-font: "Gotham", sans-serif;
-$secondary-font: "Monly", sans-serif;
+$main-font: "FuturaDemiCTT", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
 
-$text-white: #fff;
-$text-black: #000;
+$text-white: #ffffff;
+$text-black: #000000;
 $text-gray: #363636;
-$text-label: #34bfb7;
-$text-input: #073f72;
-$text-gallery: #073f72;
-$text-error: #ff626b;
-$text-invite: #073f72;
-$text-send: #34bfb7;
-$other-nr: #f26722;
-$gallery-rt: #00aae7;
-$gallery-like: #f57076;
-$overlay-1-text: #073f72;
-$prize-text: #134171;
-$prize-btn: #fc5500;
 /*Цвета фона*/
-$body-bg: #073f72;
-$team-bg: #fffbef;
-$footer-bg: #363636;
-$promo-rt-bg: #fffbef;
-$start-bg: #00c5df;
-$editor-bg: #fff7df;
+$header-bg: #ffffff;
+$footer-bg: #ffffff;
+$intro-bg: #eecf3f;
+$bread-bg: #c0483b;
 
 /*Цвета интерфейса*/
-$border-bg: #34bfb7;
-$btn-enter: #073f72;
-$btn-submit: #ff6700;
-$single-header: #51c839;
-$single-header-sent: #fcd726;
-$single-delete: #ff626b;
-$status-item: #51c839;
-$start-btn: #b7b7b7;
-$start-info: #34bfb7;
-$social-item-bg: #ffffff;
-$social-hover: #ff6700;
 
 @media (min-width: $laptop) {
 

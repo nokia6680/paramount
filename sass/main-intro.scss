@@ -1,0 +1,23 @@
+.main-intro {
+  background-color: $intro-bg;
+  background-image: url('../img/intro-texture.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__title {
+    padding-top: 90px;
+    padding-bottom: 58px;
+  }
+
+  &__breadcrumbs {
+    align-self: flex-start;
+  }
+}

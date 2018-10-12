@@ -1,0 +1,45 @@
+.breadcrumbs-item {
+  margin-right: 30px;
+
+  position: relative;
+
+  &__link {
+    text-decoration: none;
+    color: $text-white;
+
+    font: {
+      family: $secondary-font;
+      size: 0.813em;
+      weight: 400;
+    }
+
+    line-height: normal;
+  }
+
+  &::after {
+    position: absolute;
+    content: ">";
+
+    font-size: 0.813em;
+    color: $text-white;
+
+    top: 3px;
+    right: -20px;
+  }
+
+  &--choose {
+    display: none;
+  }
+
+  &--all {
+    display: none;
+  }
+}
+
+.breadcrumbs-item:last-of-type {
+  margin-right: 0;
+
+  &::after {
+    display: none;
+  }
+}

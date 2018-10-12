@@ -1,0 +1,18 @@
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  padding-top: 23px;
+  padding-bottom: 22px;
+
+  &__logo {
+    position: absolute;
+
+    top: 20px;
+    left: -150px;
+  }
+}

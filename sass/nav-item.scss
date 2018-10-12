@@ -1,0 +1,22 @@
+.nav-item {
+  margin-right: 60px;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__text {
+    color: $text-black;
+    line-height: 1.438em;
+
+    font: {
+      family: $main-font;
+      size: 1.25em;
+      weight: 600;
+    }
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
