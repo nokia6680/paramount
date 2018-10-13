@@ -1,0 +1,32 @@
+.studio-howto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: $howto-bg;
+
+  margin-right: 100px;
+
+  box-shadow:
+    1px 0px rgba(208,62,61,1), 1px 1px rgba(208,62,61,1),
+    2px 1px rgba(208,62,61,1), 2px 2px rgba(208,62,61,1),
+    3px 2px rgba(208,62,61,1), 3px 3px rgba(208,62,61,1),
+    4px 3px rgba(208,62,61,1), 4px 4px rgba(208,62,61,1),
+    5px 4px rgba(208,62,61,1), 5px 5px rgba(208,62,61,1),
+    6px 5px rgba(208,62,61,1), 6px 6px rgba(208,62,61,1),
+    7px 6px rgba(208,62,61,1), 7px 7px rgba(208,62,61,1),
+    8px 7px rgba(208,62,61,1), 8px 8px rgba(208,62,61,1),
+    9px 8px rgba(208,62,61,1),  9px 9px rgba(208,62,61,1),
+    10px 9px rgba(208,62,61,1), 10px 10px rgba(208,62,61,1),
+    11px 10px rgba(208,62,61,1), 11px 11px rgba(208,62,61,1),
+    12px 11px rgba(208,62,61,1), 12px 12px rgba(208,62,61,1),
+    13px 12px rgba(208,62,61,1), 13px 13px rgba(208,62,61,1),
+    14px 13px rgba(208,62,61,1), 14px 14px rgba(208,62,61,1),
+    15px 14px rgba(208,62,61,1), 15px 15px rgba(208,62,61,1),
+    16px 15px rgba(208,62,61,1), 16px 16px rgba(208,62,61,1),
+    17px 16px rgba(208,62,61,1), 17px 17px rgba(208,62,61,1),
+    18px 17px rgba(208,62,61,1), 18px 18px rgba(208,62,61,1),
+    19px 18px rgba(208,62,61,1), 19px 19px rgba(208,62,61,1),
+    20px 19px rgba(208,62,61,1), 20px 20px rgba(208,62,61,1);
+}

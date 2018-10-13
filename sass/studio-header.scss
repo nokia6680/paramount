@@ -1,0 +1,10 @@
+.studio-header {
+  background-color: $studio-header-bg;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
