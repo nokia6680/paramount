@@ -1,0 +1,23 @@
+.footer-copyright {
+  width: 100%;
+  margin-top: 10px;
+
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__description {
+    font: {
+      family: $main-font;
+      size: 1.25em;
+      weight: 500;
+    }
+
+    color: $text-contacts;
+    line-height: 1.813em;
+
+    margin: 0;
+  }
+}

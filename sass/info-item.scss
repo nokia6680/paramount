@@ -1,0 +1,18 @@
+.info-item {
+  margin-right: 23px;
+
+  &__link {
+    font: {
+      family: $main-font;
+      size: 1.25em;
+      weight: 500;
+    }
+
+    color: $text-gray;
+    line-height: 1.813em;
+
+    text-decoration: underline;
+    display: inline;
+    word-wrap: break-word;
+  }
+}

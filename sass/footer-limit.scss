@@ -1,0 +1,31 @@
+.footer-limit {
+  width: 70px;
+  height: 70px;
+
+  border: 5px solid $social-bg;
+  border-radius: 50%;
+
+  background-color: transparent;
+  position: relative;
+
+  margin-left: 100px;
+
+  &__ages {
+    font: {
+      family: $main-font;
+      size: 2em;
+      weight: 500;
+    }
+
+    color: $social-bg;
+    line-height: 1;
+
+    display: block;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}

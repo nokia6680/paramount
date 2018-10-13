@@ -1,0 +1,18 @@
+.info-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  &__reserved,
+  &__developed {
+    font: {
+      family: $main-font;
+      size: 1.25em;
+      weight: 500;
+    }
+
+    color: $text-gray;
+    line-height: 1.813em;
+  }
+}

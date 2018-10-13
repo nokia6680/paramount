@@ -1,0 +1,32 @@
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+
+  &__connect {
+    display: block;
+
+    background-color: $btn-red-bg;
+    text-align: center;
+    text-decoration: none;
+
+    padding-left: 60px;
+    padding-top: 13px;
+    padding-right: 59px;
+    padding-bottom: 12px;
+  }
+
+  &__text {
+    font: {
+      family: $main-font;
+      size: 1.25em;
+      weight: 500;
+    }
+
+    color: $text-white;
+    line-height: 1;
+  }
+}
