@@ -1,0 +1,32 @@
+.choose-first {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 950px;
+  height: 305px;
+
+  &__video {
+    width: 307px;
+  }
+
+  &__preview {
+    width: 307px;
+    height: 200px;
+  }
+
+  &__description {
+    font: {
+      family: $main-font;
+      size: 1.25em;
+      weight: 500;
+    }
+
+    color: $text-black;
+    line-height: 1;
+
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}

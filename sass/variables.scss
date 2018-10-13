@@ -1,14 +1,10 @@
 $phones: 320px;
 $smartphones: 480px;
 $tablets: 768px;
-$laptop: 1024px;
-$netbooks: 1280px;
-$wide-netbooks: 1366px;
-$notebooks: 1440px;
-$widebooks: 1600px;
+$netbooks: 1024px;
+$notebooks: 1152px;
+$widebooks: 1500px;
 $hd: 1920px;
-$fhd: 2560px;
-
 
 $main-font: "FuturaDemiCTT", sans-serif;
 $secondary-font: "Open Sans", sans-serif;
@@ -28,30 +24,3 @@ $btn-red-bg: #d1342b;
 $social-bg: #fcda44;
 
 /*Цвета интерфейса*/
-
-@media (min-width: $laptop) {
-
-}
-
-@media (min-width: $netbooks) {
-
-}
-@media (min-width: $wide-netbooks) {
-
-}
-
-@media (min-width: $notebooks) {
-
-}
-
-@media (min-width: $widebooks) {
-
-}
-
-@media (min-width: $hd) {
-
-}
-
-@media (min-width: $fhd) {
-
-}

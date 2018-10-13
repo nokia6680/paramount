@@ -4,9 +4,10 @@
   padding-left: 15px;
   padding-right: 16px;
 
-  margin-left: 100px;
-
   background-color: $bread-bg;
+
+  z-index: 10;
+  margin-bottom: -10px;
 
   box-shadow:
     -1px 0px rgba(75,141,223,1), -1px 1px rgba(75,141,223,1),

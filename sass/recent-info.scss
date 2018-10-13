@@ -1,0 +1,33 @@
+.recent-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-top: 20px;
+
+  &__name {
+    font: {
+      family: $main-font;
+      size: 1.25em;
+      weight: 500;
+    }
+
+    color: $text-black;
+    line-height: normal;
+
+    display: block;
+    width: 185px;
+  }
+
+  &__author {
+    font: {
+      family: $main-font;
+      size: 1.25em;
+      weight: 500;
+    }
+
+    color: $text-black;
+    line-height: normal;
+  }
+}

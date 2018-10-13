@@ -1,13 +1,15 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
+  @include container;
+  
   background-color: #fff;
 
-  margin-top: 140px;
-  margin-bottom: 50px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
-  width: 100%;
+    margin-left: 8.33333%;
+    margin-right: 8.33333%;
+  }
 }

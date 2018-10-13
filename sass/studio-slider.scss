@@ -1,10 +1,9 @@
-.header {
-  width: 100%;
-  
+.studio-slider {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
-  background-color: $header-bg;
+  width: 950px;
+  height: 305px;
 }

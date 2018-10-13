@@ -4,6 +4,8 @@
   justify-content: flex-start;
   align-items: flex-start;
 
+  padding-left: 15px;
+
   &__description {
     font: {
       family: $main-font;
@@ -15,6 +17,7 @@
     line-height: normal;
 
     width: 625px;
+    margin-top: 72px;
   }
 
   &__link {
