@@ -1,32 +1,40 @@
 $(document).ready(function(){
   $('.studio-slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    prevArrow: '<div class="prev"></div>',
+    nextArrow: '<div class="next"></div>',
   });
 });
 
 $(document).ready(function(){
   $('.choose-first').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    prevArrow: '<div class="prev-1"></div>',
+    nextArrow: '<div class="next-1"></div>',
   });
 });
 
 $(document).ready(function(){
   $('.choose-second').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    prevArrow: '<div class="prev-2"></div>',
+    nextArrow: '<div class="next-2"></div>',
   });
 });
 
 $(document).ready(function(){
   $('.choose-third').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    prevArrow: '<div class="prev-3"></div>',
+    nextArrow: '<div class="next-3"></div>',
   });
 });
 

@@ -6,4 +6,38 @@
 
   width: 950px;
   height: 305px;
+
+  position: relative;
+
+  .prev {
+    position: absolute;
+    top: 28%;
+    left: -5%;
+
+    background-image: url('../img/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-size: 23px 24px;
+
+    width: 23px;
+    height: 24px;
+
+    background-color: transparent;
+    border: 0;
+  }
+
+  .next {
+    position: absolute;
+    top: 28%;
+    right: -5%;
+
+    background-image: url('../img/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: 23px 24px;
+
+    width: 23px;
+    height: 24px;
+
+    background-color: transparent;
+    border: 0;
+  }
 }
