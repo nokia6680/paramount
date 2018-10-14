@@ -23,6 +23,7 @@
 
     margin-right: 20px;
 
+    position: relative;
     box-shadow:
       1px 0px rgba(201,64,58,1), 1px 1px rgba(201,64,58,1),
       2px 1px rgba(201,64,58,1), 2px 2px rgba(201,64,58,1),
@@ -36,8 +37,133 @@
       10px 9px rgba(201,64,58,1), 10px 10px rgba(201,64,58,1);
 
     &--play {
+      .fa-play {
+        position: absolute;
+        content: '\f04b';
 
+        font-size: 2em;
+        top: 50%;
+        left: 50%;
 
+        color: $text-white;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--pause {
+      .fa-pause {
+        position: absolute;
+        content: '\f04c';
+
+        font-size: 2em;
+        top: 50%;
+        left: 50%;
+
+        color: $text-white;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--rec {
+      display: none;
+
+      .fa-circle {
+        position: absolute;
+        content: '\f111';
+
+        font-size: 1.5em;
+        top: 50%;
+        left: 50%;
+
+        color: $text-white;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--stop {
+      display: none;
+
+      .fa-square-full {
+        position: absolute;
+        content: '\f45c';
+
+        font-size: 2em;
+        top: 50%;
+        left: 50%;
+
+        color: $text-white;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--rew {
+      .fa-backward {
+        position: absolute;
+        content: '\f04a';
+
+        font-size: 2em;
+        top: 50%;
+        left: 50%;
+
+        color: $text-white;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--fwd {
+      .fa-forward {
+        position: absolute;
+        content: '\f04e';
+
+        font-size: 2em;
+        top: 50%;
+        left: 50%;
+
+        color: $text-white;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--redrec {
+      background-color: $btn-red-bg;
+
+      box-shadow:
+        1px 0px rgba(60,103,182,1), 1px 1px rgba(60,103,182,1),
+        2px 1px rgba(60,103,182,1), 2px 2px rgba(60,103,182,1),
+        3px 2px rgba(60,103,182,1), 3px 3px rgba(60,103,182,1),
+        4px 3px rgba(60,103,182,1), 4px 4px rgba(60,103,182,1),
+        5px 4px rgba(60,103,182,1), 5px 5px rgba(60,103,182,1),
+        6px 5px rgba(60,103,182,1), 6px 6px rgba(60,103,182,1),
+        7px 6px rgba(60,103,182,1), 7px 7px rgba(60,103,182,1),
+        8px 7px rgba(60,103,182,1), 8px 8px rgba(60,103,182,1),
+        9px 8px rgba(60,103,182,1), 9px 9px rgba(60,103,182,1),
+        10px 9px rgba(60,103,182,1), 10px 10px rgba(60,103,182,1);
+
+      .fa-circle {
+        position: absolute;
+        content: '\f111';
+
+        font-size: 1.5em;
+        top: 50%;
+        left: 50%;
+
+        color: $text-white;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--save {
+      background-image: url('../img/save.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 30px 32px;
     }
   }
 
@@ -47,5 +173,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    margin-right: 30px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-right: 30px;
+  }
+
+  &__save {
+    margin-left: auto;
+    margin-right: 0;
   }
 }
