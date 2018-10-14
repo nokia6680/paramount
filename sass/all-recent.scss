@@ -1,0 +1,23 @@
+.all-recent {
+  @include container;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__title {
+    margin-top: 100px;
+
+    font: {
+      family: $main-font;
+      size: 2.625em;
+      weight: 500;
+    }
+
+    color: $text-black;
+    line-height: 1;
+
+    margin-bottom: 54px;
+  }
+}

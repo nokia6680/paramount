@@ -302,84 +302,89 @@
 		<section class="main__all main-all" id="main-all">
 			<div class="main-all__success all-success">
 				<h2 class="all-success__title">Озвучка успешно добавлена!</h2>
-				<p class="all-success__description">Озвучка успешно отправлена! Она будет опубликована после одобрения модератором. Обычно это занимает пару часов. Можешь пока озвучить ещё один эпизод или посмотреть творения других авторов</p>
-				<a class="all-success__link" href="#" target="_self">Выбрать эпизод для озвучки</a>
+				<p class="all-success__description">Она будет опубликована после одобрения модератором.<br />Обычно это занимает пару часов. Можешь пока озвучить ещё один эпизод или посмотреть творения других авторов</p>
+				<a class="all-success__link" href="#" target="_self">
+					<span class="all-success__text">Выбрать эпизод для озвучки</span>
+				</a>
 			</div>
 			<!--Блок последних озвучек-->
-			<ul class="main-all__recent all-recent" id="all-recent">
-				<li class="studio-recent__item recent-item">
-					<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
-					<img class="recent-item__preview" src="img/recent-video.jpg" alt="video-preview" />
-					<div class="recent-item__info recent-info">
-						<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
-						<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
-					</div>
-				</li>
-				<li class="studio-recent__item recent-item">
-					<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
-					<img class="recent-item__preview" src="img/recent-video.jpg" alt="video-preview" />
-					<div class="recent-item__info recent-info">
-						<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
-						<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
-					</div>
-				</li>
-				<li class="studio-recent__item recent-item">
-					<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
-					<img class="recent-item__preview" src="img/recent-video.jpg" alt="video-preview" />
-					<div class="recent-item__info recent-info">
-						<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
-						<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
-					</div>
-				</li>
-				<li class="studio-recent__item recent-item">
-					<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
-					<img class="recent-item__preview" src="img/recent-video.jpg" alt="video-preview" />
-					<div class="recent-item__info recent-info">
-						<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
-						<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
-					</div>
-				</li>
-				<li class="studio-recent__item recent-item">
-					<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
-					<img class="recent-item__preview" src="img/recent-video.jpg" alt="video-preview" />
-					<div class="recent-item__info recent-info">
-						<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
-						<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
-					</div>
-				</li>
-				<li class="studio-recent__item recent-item">
-					<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
-					<img class="recent-item__preview" src="img/recent-video.jpg" alt="video-preview" />
-					<div class="recent-item__info recent-info">
-						<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
-						<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
-					</div>
-				</li>
-				<li class="studio-recent__item recent-item">
-					<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
-					<img class="recent-item__preview" src="img/recent-video.jpg" alt="video-preview" />
-					<div class="recent-item__info recent-info">
-						<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
-						<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
-					</div>
-				</li>
-				<li class="studio-recent__item recent-item">
-					<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
-					<img class="recent-item__preview" src="img/recent-video.jpg" alt="video-preview" />
-					<div class="recent-item__info recent-info">
-						<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
-						<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
-					</div>
-				</li>
-				<li class="studio-recent__item recent-item">
-					<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
-					<img class="recent-item__preview" src="img/recent-video.jpg" alt="video-preview" />
-					<div class="recent-item__info recent-info">
-						<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
-						<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
-					</div>
-				</li>
-			</ul>
+			<div class="main-all__recent all-recent">
+				<h2 class="all-recent__title">Последние озвучки</h2>
+				<ul class="all-recent__list recent-list" id="recent-all">
+					<li class="recent-list__item recent-item">
+						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
+						<img class="recent-item__preview" src="img/4.jpg" alt="video-preview" />
+						<div class="recent-item__info recent-info">
+							<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
+							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
+						</div>
+					</li>
+					<li class="recent-list__item recent-item">
+						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
+						<img class="recent-item__preview" src="img/5.jpg" alt="video-preview" />
+						<div class="recent-item__info recent-info">
+							<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
+							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
+						</div>
+					</li>
+					<li class="recent-list__item recent-item">
+						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
+						<img class="recent-item__preview" src="img/6.jpg" alt="video-preview" />
+						<div class="recent-item__info recent-info">
+							<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
+							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
+						</div>
+					</li>
+					<li class="recent-list__item recent-item">
+						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
+						<img class="recent-item__preview" src="img/4.jpg" alt="video-preview" />
+						<div class="recent-item__info recent-info">
+							<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
+							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
+						</div>
+					</li>
+					<li class="recent-list__item recent-item">
+						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
+						<img class="recent-item__preview" src="img/5.jpg" alt="video-preview" />
+						<div class="recent-item__info recent-info">
+							<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
+							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
+						</div>
+					</li>
+					<li class="recent-list__item recent-item">
+						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
+						<img class="recent-item__preview" src="img/6.jpg" alt="video-preview" />
+						<div class="recent-item__info recent-info">
+							<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
+							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
+						</div>
+					</li>
+					<li class="recent-list__item recent-item">
+						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
+						<img class="recent-item__preview" src="img/4.jpg" alt="video-preview" />
+						<div class="recent-item__info recent-info">
+							<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
+							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
+						</div>
+					</li>
+					<li class="recent-list__item recent-item">
+						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
+						<img class="recent-item__preview" src="img/5.jpg" alt="video-preview" />
+						<div class="recent-item__info recent-info">
+							<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
+							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
+						</div>
+					</li>
+					<li class="recent-list__item recent-item">
+						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
+						<img class="recent-item__preview" src="img/6.jpg" alt="video-preview" />
+						<div class="recent-item__info recent-info">
+							<b class="recent-info__name">Детство Шелдона (фрагмент 6)</b>
+							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</section>
 	</main>
 	<!--Site footer-->

@@ -5,4 +5,103 @@
   align-items: center;
 
   width: 100%;
+
+  &__title {
+    font: {
+      family: $main-font;
+      size: 2.625em;
+      weight: 500;
+    }
+
+    color: $text-black;
+    line-height: 1;
+
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    display: block;
+    width: 915px;
+    font: {
+      family: $main-font;
+      size: 1.875em;
+      weight: 500;
+    }
+
+    color: $text-black;
+    line-height: 1;
+
+    margin-top: 0;
+
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+
+    padding-left: 43px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+
+    margin-top: 90px;
+
+    position: relative;
+
+    background-color: $btn-red-bg;
+
+    box-shadow:
+      1px 0px rgba(75,141,223,1), 1px 1px rgba(75,141,223,1),
+      2px 1px rgba(75,141,223,1), 2px 2px rgba(75,141,223,1),
+      3px 2px rgba(75,141,223,1), 3px 3px rgba(75,141,223,1),
+      4px 3px rgba(75,141,223,1), 4px 4px rgba(75,141,223,1),
+      5px 4px rgba(75,141,223,1), 5px 5px rgba(75,141,223,1),
+      6px 5px rgba(75,141,223,1), 6px 6px rgba(75,141,223,1),
+      7px 6px rgba(75,141,223,1), 7px 7px rgba(75,141,223,1),
+      8px 7px rgba(75,141,223,1), 8px 8px rgba(75,141,223,1),
+      9px 8px rgba(75,141,223,1), 9px 9px rgba(75,141,223,1),
+      10px 9px rgba(75,141,223,1), 10px 10px rgba(75,141,223,1),
+      11px 10px rgba(75,141,223,1), 11px 11px rgba(75,141,223,1),
+      12px 11px rgba(75,141,223,1), 12px 12px rgba(75,141,223,1),
+      13px 12px rgba(75,141,223,1), 13px 13px rgba(75,141,223,1),
+      14px 13px rgba(75,141,223,1), 14px 14px rgba(75,141,223,1),
+      15px 14px rgba(75,141,223,1), 15px 15px rgba(75,141,223,1),
+      16px 15px rgba(75,141,223,1), 16px 16px rgba(75,141,223,1),
+      17px 16px rgba(75,141,223,1), 17px 17px rgba(75,141,223,1),
+      18px 17px rgba(75,141,223,1), 18px 18px rgba(75,141,223,1),
+      19px 18px rgba(75,141,223,1), 19px 19px rgba(75,141,223,1),
+      20px 19px rgba(75,141,223,1), 20px 20px rgba(75,141,223,1);
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: #ffffff;
+
+      top: 50%;
+      right: 31px;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  &__text {
+    display: block;
+    width: 212px;
+
+    font: {
+      family: $main-font;
+      size: 1.875em;
+      weight: 400;
+    }
+
+    color: $text-white;
+    line-height: 1;
+  }
 }
