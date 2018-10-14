@@ -1,0 +1,31 @@
+.player-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 700px;
+
+  position: relative;
+
+  &__content {
+    width: 700px;
+    height: 395px;
+  }
+
+  &__reddot {
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+    border: none;
+
+    display: block;
+    background-color: $rec-bg;
+
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+  }
+}

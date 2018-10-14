@@ -1,0 +1,25 @@
+.phrase-item {
+  margin-bottom: 20px;
+
+  &__time {
+    font: {
+      family: $secondary-font;
+      size: 1em;
+      weight: 600;
+    }
+
+    color: $text-black;
+    line-height: 1.5em;
+  }
+
+  &__text {
+    font: {
+      family: $secondary-font;
+      size: 1em;
+      weight: 400;
+    }
+
+    color: $text-black;
+    line-height: 1.5em;
+  }
+}

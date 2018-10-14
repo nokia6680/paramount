@@ -467,95 +467,97 @@
 
 	<!--Окно записи-->
 	<div class="video-player">
-		<button class="video-player__close" type="button"></button>
+		<div class="video-player__wrapper">
+			<button class="video-player__close" type="button"><i class="fas fa-times"></i></button>
 		<!--Блок с видео и управлением-->
-		<div class="video-player__window player-window">
-			<video class="player-window__content" width="100%" poster="img/video-1.jpg">
-				<source src="video/1.ogv" type='video/ogg; codecs="theora, vorbis"'>
-				<source src="video/2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-				<source src="video/3.webm" type='video/webm; codecs="vp8, vorbis"'>
-			</video>
-			<span class="player-window__reddot"></span>
-			<div class="player-window__controls player-controls">
-				<!--Группа кнопок проигрывание, пауза, запись, стоп-->
-				<div class="player-controls__main">
-					<button class="player-controls__play" type="button" id="btn-play"></button>
-					<button class="player-controls__pause" type="button" id="btn-pause"></button>
-					<button class="player-controls__rec" type="button" id="btn-rec"></button>
-					<button class="player-controls__stop" type="button" id="btn-stop"></button>
-				</div>
-				<!--Группа навигационных кнопок перемотки-->
-				<div class="player-controls__nav">
-					<button class="player-controls__rewind" type="button" id="btn-rew"></button>
-					<button class="player-controls__forward" type="button" id="btn-fwd"></button>
-				</div>
-				<!--Отдельная кнопка записи-->
-				<div class="player-controls__record">
-					<button class="player-controls__rec player-controls__rec--red" type="button" id="btn-rec-red"></button>
-				</div>
-				<!--Отдельная кнопка сохранения-->
-				<div class="player-controls__save">
-					<button class="player-controls__save" type="button" id="btn-save"></button>
+			<div class="video-player__window player-window">
+				<video class="player-window__content" width="100%" controls poster="img/video-1.jpg">
+					<source src="video/1.ogv" type='video/ogg; codecs="theora, vorbis"'>
+					<source src="video/2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					<source src="video/3.webm" type='video/webm; codecs="vp8, vorbis"'>
+				</video>
+				<span class="player-window__reddot"></span>
+				<div class="player-window__controls player-controls">
+					<!--Группа кнопок проигрывание, пауза, запись, стоп-->
+					<div class="player-controls__main">
+						<button class="player-controls__btn player-controls__btn--play" type="button" id="btn-play"><i class="fas fa-play"></i></button>
+						<button class="player-controls__btn player-controls__btn--pause" type="button" id="btn-pause"><i class="fas fa-pause"></i></button>
+						<button class="player-controls__btn player-controls__btn--rec" type="button" id="btn-rec"><i class="fas fa-circle"></i></button>
+						<button class="player-controls__btn player-controls__btn--stop" type="button" id="btn-stop"><i class="fas fa-stop"></i></button>
+					</div>
+					<!--Группа навигационных кнопок перемотки-->
+					<div class="player-controls__nav">
+						<button class="player-controls__btn player-controls__btn--rew" type="button" id="btn-rew"><i class="fas fa-backward"></i></button>
+						<button class="player-controls__btn player-controls__btn--fwd" type="button" id="btn-fwd"><i class="fas fa-forward"></i></button>
+					</div>
+					<!--Отдельная кнопка записи-->
+					<div class="player-controls__record">
+						<button class="player-controls__btn player-controls__btn--redrec" type="button" id="btn-rec-red"><i class="fas fa-circle"></i></button>
+					</div>
+					<!--Отдельная кнопка сохранения-->
+					<div class="player-controls__save">
+						<button class="player-controls__btn player-controls__btn--save" type="button" id="btn-save"></button>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!--Блок списка фраз-->
-		<div class="video-player__phrase player-phrase">
-			<ul class="player-phrase__list phrase-list">
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
+			<!--Блок списка фраз-->
+			<div class="video-player__phrase player-phrase">
+				<ul class="player-phrase__list phrase-list">
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
 
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-				<li class="phrase-list__item phrase-item">
-					<b class="phrase-item__time">00:03&mdash;00:05</b>
-					<span class="phrase-item__text">Алло?</span>
-				</li>
-			</ul>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+					<li class="phrase-list__item phrase-item">
+						<b class="phrase-item__time">00:03&mdash;00:05</b>
+						<span class="phrase-item__text">Алло?</span>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<!--Попап подтверждения окончания записи-->
