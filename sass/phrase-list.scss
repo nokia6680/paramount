@@ -11,5 +11,16 @@
   align-self: flex-start;
 
   overflow-y: scroll;
-  height: 490px;
+  height: 470px;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    display: inline-block;
+    width: 3px;
+    background-color: #efefef;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #000;
+  }
 }

@@ -562,39 +562,49 @@
 	</div>
 	<!--Попап подтверждения окончания записи-->
 	<div class="popup-main">
-		<button class="popup-main__close" type="button"></button>
-		<!--Контент шаг 1-->
-		<div class="popup-main__finish popup-finish">
-			<h2 class="popup-finish__title">
-				<b class="popup-finish__left">Запись</b>
-				<b class="popup-finish__right">готова?</b>
-			</h2>
-			<div class="popup-finish__controls">
-				<button class="popup-finish__continue" type="button">Нет, продолжить редактирование</button>
-				<button class="popup-finish__submit" type="submit">Да, отправить на модерацию</button>
+		<div class="popup-main__wrapper">
+			<button class="popup-main__close" type="button"><i class="fas fa-times"></i></button>
+			<!--Контент шаг 1-->
+			<div class="popup-main__finish popup-finish">
+				<img class="popup-finish__title" src="img/finish-title.svg" alt="Запись готова?"/>
+				<div class="popup-finish__controls">
+					<button class="popup-finish__continue" type="button">
+						<span class="popup-finish__text popup-finish__text--continue">Нет, продолжить редактирование</span>
+					</button>
+					<button class="popup-finish__submit" type="submit">
+						<span class="popup-finish__text popup-finish__text--submit">Да, отправить на модерацию</span>
+					</button>
+				</div>
 			</div>
-		</div>
-		<!--Контент шаг 2-->
-		<div class="popup-main__details popup-details">
-			<form class="popup-details__form details-form" method="post" action="#">
-				<label class="details-form__label" for="author-name">Ваше имя</label>
-				<input type="text" class="details-form__input" name="author-name" id="author-name" />
-			</form>
-			<div class="popup-details__controls">
-				<button class="popup-details__back" type="button">Назад</button>
-				<button class="popup-details__send" type="submit">Отправить</button>
+			<!--Контент шаг 2-->
+			<div class="popup-main__details popup-details">
+				<form class="popup-details__form details-form" method="post" action="#">
+					<label class="details-form__label" for="author-name">Ваше имя</label>
+					<input type="text" class="details-form__input" name="author-name" id="author-name" />
+				</form>
+				<div class="popup-details__controls">
+					<button class="popup-details__back" type="button">
+						<span class="popup-details__text">Назад</span>
+					</button>
+					<button class="popup-details__send" type="submit">
+						<span class="popup-details__text">Отправить</span>
+					</button>
+				</div>
 			</div>
-		</div>
-		<!--Контент шаг 3-->
-		<div class="popup-main__save popup-save">
-			<h2 class="popup-save__title">
-				<b class="popup-save__right">Сохранить</b>
-				<b class="popup-save__left">изменения?</b>
-			</h2>
-			<div class="popup-save__controls">
-				<button class="popup-save__discard popup-save__discard--red" type="button">Не сохранять</button>
-				<button class="popup-save__cancel" type="button">Отмена</button>
-				<button class="popup-save__save" type="button">Сохранить</button>
+			<!--Контент шаг 3-->
+			<div class="popup-main__save popup-save">
+				<img class="popup-save__title" src="img/save-title.svg"/>
+				<div class="popup-save__controls">
+					<button class="popup-save__btn popup-save__btn--discard popup-save__btn--red" type="button">
+						<span class="popup-save__text">Не сохранять</span>
+					</button>
+					<button class="popup-save__btn popup-save__btn--cancel" type="button">
+						<span class="popup-save__text">Отмена</span>
+					</button>
+					<button class="popup-save__btn popup-save__btn--save" type="button">
+						<span class="popup-save__text">Сохранить</span>
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>
