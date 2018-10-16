@@ -41,3 +41,42 @@
     border: 0;
   }
 }
+
+@media (min-width: $widebooks) {
+  .studio-slider {
+    width: 1440px;
+    height: auto;
+
+    .prev {
+      position: absolute;
+      top: 38%;
+      left: -5%;
+
+      background-image: url('../img/arrow-left.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
+
+      width: 23px;
+      height: 24px;
+
+      background-color: transparent;
+      border: 0;
+    }
+
+    .next {
+      position: absolute;
+      top: 38%;
+      right: -5%;
+
+      background-image: url('../img/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
+
+      width: 23px;
+      height: 24px;
+
+      background-color: transparent;
+      border: 0;
+    }
+  }
+}

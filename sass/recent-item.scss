@@ -49,3 +49,52 @@
     transform: translate(-50%, -50%);
   }
 }
+
+@media (min-width: $widebooks) {
+  .recent-item {
+    width: 460px;
+
+    &__preview {
+      width: 460px;
+      height: auto;
+    }
+
+    &__play {
+      width: 50px;
+      height: 50px;
+
+      margin: 0;
+      padding: 0;
+      top: -10px;
+      margin-left: -10px;
+      background-color: $btn-red-bg;
+      position: absolute;
+
+      border: none;
+      box-shadow:
+        1px 0px rgba(75,141,223,1), 1px 1px rgba(75,141,223,1),
+        2px 1px rgba(75,141,223,1), 2px 2px rgba(75,141,223,1),
+        3px 2px rgba(75,141,223,1), 3px 3px rgba(75,141,223,1),
+        4px 3px rgba(75,141,223,1), 4px 4px rgba(75,141,223,1),
+        5px 4px rgba(75,141,223,1), 5px 5px rgba(75,141,223,1),
+        6px 5px rgba(75,141,223,1), 6px 6px rgba(75,141,223,1),
+        7px 6px rgba(75,141,223,1), 7px 7px rgba(75,141,223,1),
+        8px 7px rgba(75,141,223,1), 8px 8px rgba(75,141,223,1),
+        9px 8px rgba(75,141,223,1), 9px 9px rgba(75,141,223,1),
+        10px 9px rgba(75,141,223,1), 10px 10px rgba(75,141,223,1);
+    }
+
+    .fa-play::before {
+      position: absolute;
+      content: '\f04b';
+      color: $text-white;
+
+      font-size: 1.625em;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -9,7 +9,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.choose-first').slick({
+  $('.choose-slider__first').slick({
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -19,7 +19,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.choose-second').slick({
+  $('.choose-slider__second').slick({
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -29,7 +29,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.choose-third').slick({
+  $('.choose-slider__third').slick({
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 3,

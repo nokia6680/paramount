@@ -1,0 +1,248 @@
+.choose-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 950px;
+  height: 305px;
+
+  position: relative;
+
+  &__video {
+    width: 307px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+
+  &__preview {
+    width: 307px;
+    height: 200px;
+  }
+
+  &__description {
+    font: {
+      family: $main-font;
+      size: 1.25em;
+      weight: 500;
+    }
+
+    color: $text-black;
+    line-height: 1;
+
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .prev-1 {
+    position: absolute;
+    top: 28%;
+    left: -5%;
+
+    background-image: url('../img/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-size: 23px 24px;
+
+    width: 23px;
+    height: 24px;
+
+    background-color: transparent;
+    border: 0;
+  }
+
+  .next-1 {
+    position: absolute;
+    top: 28%;
+    right: -5%;
+
+    background-image: url('../img/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: 23px 24px;
+
+    width: 23px;
+    height: 24px;
+
+    background-color: transparent;
+    border: 0;
+  }
+
+  .prev-2 {
+    position: absolute;
+    top: 28%;
+    left: -5%;
+
+    background-image: url('../img/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-size: 23px 24px;
+
+    width: 23px;
+    height: 24px;
+
+    background-color: transparent;
+    border: 0;
+  }
+
+  .next-2 {
+    position: absolute;
+    top: 28%;
+    right: -5%;
+
+    background-image: url('../img/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: 23px 24px;
+
+    width: 23px;
+    height: 24px;
+
+    background-color: transparent;
+    border: 0;
+  }
+
+  .prev-3 {
+    position: absolute;
+    top: 28%;
+    left: -5%;
+
+    background-image: url('../img/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-size: 23px 24px;
+
+    width: 23px;
+    height: 24px;
+
+    background-color: transparent;
+    border: 0;
+  }
+
+  .next-3 {
+    position: absolute;
+    top: 28%;
+    right: -5%;
+
+    background-image: url('../img/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: 23px 24px;
+
+    width: 23px;
+    height: 24px;
+
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+@media (min-width: $widebooks) {
+  .choose-slider {
+    width: 1440px;
+    height: auto;
+
+    &__video {
+      width: 460px;
+    }
+
+    &__preview {
+      width: 460px;
+      height: 300px;
+    }
+
+    .prev-1 {
+      position: absolute;
+      top: 38%;
+      left: -5%;
+
+      background-image: url('../img/arrow-left.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
+
+      width: 23px;
+      height: 24px;
+
+      background-color: transparent;
+      border: 0;
+    }
+
+    .next-1 {
+      position: absolute;
+      top: 38%;
+      right: -5%;
+
+      background-image: url('../img/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
+
+      width: 23px;
+      height: 24px;
+
+      background-color: transparent;
+      border: 0;
+    }
+
+    .prev-2 {
+      position: absolute;
+      top: 38%;
+      left: -5%;
+
+      background-image: url('../img/arrow-left.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
+
+      width: 23px;
+      height: 24px;
+
+      background-color: transparent;
+      border: 0;
+    }
+
+    .next-2 {
+      position: absolute;
+      top: 38%;
+      right: -5%;
+
+      background-image: url('../img/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
+
+      width: 23px;
+      height: 24px;
+
+      background-color: transparent;
+      border: 0;
+    }
+
+    .prev-3 {
+      position: absolute;
+      top: 38%;
+      left: -5%;
+
+      background-image: url('../img/arrow-left.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
+
+      width: 23px;
+      height: 24px;
+
+      background-color: transparent;
+      border: 0;
+    }
+
+    .next-3 {
+      position: absolute;
+      top: 38%;
+      right: -5%;
+
+      background-image: url('../img/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
+
+      width: 23px;
+      height: 24px;
+
+      background-color: transparent;
+      border: 0;
+    }
+  }
+}

@@ -18,3 +18,26 @@
     line-height: 1;
   }
 }
+
+@media (min-width: $widebooks) {
+  .choose-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 1420px;
+
+    &__title {
+      align-self: flex-start;
+      font: {
+        family: $main-font;
+        size: 1.875em;
+        weight: 500;
+      }
+
+      color: $text-black;
+      line-height: 1;
+    }
+  }
+}
