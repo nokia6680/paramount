@@ -17,6 +17,10 @@
     line-height: 1.813em;
 
     text-decoration: underline;
+
+    &:hover {
+      color: $footer-contact-hover;
+    }
   }
 
   &__about {
