@@ -34,19 +34,22 @@
       8px 7px rgba(75,141,223,1), 8px 8px rgba(75,141,223,1),
       9px 8px rgba(75,141,223,1), 9px 9px rgba(75,141,223,1),
       10px 9px rgba(75,141,223,1), 10px 10px rgba(75,141,223,1);
-  }
 
-  .fa-play::before {
-    position: absolute;
-    content: '\f04b';
-    color: $text-white;
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../img/play-slider.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24.5px;
 
-    font-size: 1.625em;
+      width: 23px;
+      height: 24.5px;
 
-    top: 50%;
-    left: 50%;
+      top: 50%;
+      left: 50%;
 
-    transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
@@ -82,19 +85,6 @@
         8px 7px rgba(75,141,223,1), 8px 8px rgba(75,141,223,1),
         9px 8px rgba(75,141,223,1), 9px 9px rgba(75,141,223,1),
         10px 9px rgba(75,141,223,1), 10px 10px rgba(75,141,223,1);
-    }
-
-    .fa-play::before {
-      position: absolute;
-      content: '\f04b';
-      color: $text-white;
-
-      font-size: 1.625em;
-
-      top: 50%;
-      left: 50%;
-
-      transform: translate(-50%, -50%);
     }
   }
 }

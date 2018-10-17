@@ -76,6 +76,11 @@
 
     margin-right: 0;
     margin-left: auto;
+
+    cursor: pointer;
+    outline: none;
+
+    z-index: 101;
   }
 
   .fa-times::before {

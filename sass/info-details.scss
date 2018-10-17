@@ -4,8 +4,7 @@
   justify-content: flex-start;
   align-items: flex-end;
 
-  &__reserved,
-  &__developed {
+  &__reserved {
     font: {
       family: $main-font;
       size: 1.25em;
