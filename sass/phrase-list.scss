@@ -11,7 +11,7 @@
   align-self: flex-start;
 
   overflow-y: scroll;
-  height: 465px;
+
   width: 100%;
 
   &::-webkit-scrollbar {
@@ -22,5 +22,12 @@
 
   &::-webkit-scrollbar-thumb {
     background-color: #000;
+  }
+}
+
+
+@media (min-width: $netbooks) {
+  .phrase-list {
+    height: 465px;
   }
 }

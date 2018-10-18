@@ -8,5 +8,13 @@
   margin: 0;
   padding: 0;
 
-  margin-left: 85px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media (min-width: $netbooks) {
+  .footer-social {
+    margin-left: 85px;
+    margin-top: 0;
+  }
 }

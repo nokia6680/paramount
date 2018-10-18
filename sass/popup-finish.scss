@@ -1,30 +1,48 @@
 .popup-finish {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 
   width: 100%;
 
-  padding-top: 81px;
-  padding-bottom: 73px;
+  padding-top: 160px;
+  padding-bottom: 206px;
+
+  &__title {
+    font: {
+      family: $main-font;
+      size: 1.875em;
+      weight: 400;
+    }
+    color: $text-black;
+    line-height: 2.375em;
+    text-align: center;
+
+    margin: 0;
+  }
 
   &__controls {
-    margin-top: 65px;
+    margin-top: 50px;
 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
 
   &__continue {
-    margin-right: 100px;
+    width: 205px;
 
-    padding-top: 20px;
-    padding-left: 68px;
-    padding-bottom: 20px;
-    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     background-color: $controls-bg;
 
@@ -42,33 +60,23 @@
       8px 7px rgba(201,64,58,1), 8px 8px rgba(201,64,58,1),
       9px 8px rgba(201,64,58,1), 9px 9px rgba(201,64,58,1),
       10px 9px rgba(201,64,58,1), 10px 10px rgba(201,64,58,1);
-
-    &::after {
-      position: absolute;
-      content: '';
-
-      width: 35px;
-      height: 31px;
-
-      top: 50%;
-      left: 20px;
-
-      transform: translateY(-50%);
-
-      background-image: url('../img/arr-left.svg');
-      background-repeat: no-repeat;
-      background-size: 35px 31px;
-    }
   }
 
   &__submit {
     background-color: $controls-bg;
     position: relative;
 
-    padding-top: 20px;
-    padding-left: 33px;
-    padding-bottom: 20px;
-    padding-right: 70px;
+    padding-top:6px;
+    padding-bottom: 6px;
+
+    width: 205px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
 
     border: none;
     box-shadow:
@@ -82,6 +90,76 @@
       8px 7px rgba(201,64,58,1), 8px 8px rgba(201,64,58,1),
       9px 8px rgba(201,64,58,1), 9px 9px rgba(201,64,58,1),
       10px 9px rgba(201,64,58,1), 10px 10px rgba(201,64,58,1);
+  }
+
+  &__text {
+    font: {
+      family: $main-font;
+      size: 1.125em;
+      weight: 400;
+    }
+
+    color: $text-white;
+    line-height: 1.25em;
+    text-align: center;
+
+    &--continue {
+      display: block;
+      width: 135px;
+    }
+
+    &--submit {
+      display: block;
+      width: 118px;
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .popup-finish {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+
+    padding-top: 81px;
+    padding-bottom: 73px;
+
+    &__controls {
+      margin-top: 65px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__continue {
+      margin-right: 100px;
+
+      padding-top: 20px;
+      padding-left: 68px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+
+      background-color: $controls-bg;
+
+      position: relative;
+
+      border: none;
+      box-shadow:
+        1px 0px rgba(201,64,58,1), 1px 1px rgba(201,64,58,1),
+        2px 1px rgba(201,64,58,1), 2px 2px rgba(201,64,58,1),
+        3px 2px rgba(201,64,58,1), 3px 3px rgba(201,64,58,1),
+        4px 3px rgba(201,64,58,1), 4px 4px rgba(201,64,58,1),
+        5px 4px rgba(201,64,58,1), 5px 5px rgba(201,64,58,1),
+        6px 5px rgba(201,64,58,1), 6px 6px rgba(201,64,58,1),
+        7px 6px rgba(201,64,58,1), 7px 7px rgba(201,64,58,1),
+        8px 7px rgba(201,64,58,1), 8px 8px rgba(201,64,58,1),
+        9px 8px rgba(201,64,58,1), 9px 9px rgba(201,64,58,1),
+        10px 9px rgba(201,64,58,1), 10px 10px rgba(201,64,58,1);
 
       &::after {
         position: absolute;
@@ -91,35 +169,76 @@
         height: 31px;
 
         top: 50%;
-        right: 20px;
+        left: 20px;
 
         transform: translateY(-50%);
 
-        background-image: url('../img/arr-right.svg');
+        background-image: url('../img/arr-left.svg');
         background-repeat: no-repeat;
         background-size: 35px 31px;
       }
-  }
-
-  &__text {
-    font: {
-      family: $main-font;
-      size: 1.875em;
-      weight: 500;
     }
 
-    color: $text-white;
-    line-height: 1;
-    text-align: center;
+    &__submit {
+      background-color: $controls-bg;
+      position: relative;
 
-    &--continue {
-      display: block;
-      width: 225px;
+      padding-top: 20px;
+      padding-left: 33px;
+      padding-bottom: 20px;
+      padding-right: 70px;
+
+      border: none;
+      box-shadow:
+        1px 0px rgba(201,64,58,1), 1px 1px rgba(201,64,58,1),
+        2px 1px rgba(201,64,58,1), 2px 2px rgba(201,64,58,1),
+        3px 2px rgba(201,64,58,1), 3px 3px rgba(201,64,58,1),
+        4px 3px rgba(201,64,58,1), 4px 4px rgba(201,64,58,1),
+        5px 4px rgba(201,64,58,1), 5px 5px rgba(201,64,58,1),
+        6px 5px rgba(201,64,58,1), 6px 6px rgba(201,64,58,1),
+        7px 6px rgba(201,64,58,1), 7px 7px rgba(201,64,58,1),
+        8px 7px rgba(201,64,58,1), 8px 8px rgba(201,64,58,1),
+        9px 8px rgba(201,64,58,1), 9px 9px rgba(201,64,58,1),
+        10px 9px rgba(201,64,58,1), 10px 10px rgba(201,64,58,1);
+
+        &::after {
+          position: absolute;
+          content: '';
+
+          width: 35px;
+          height: 31px;
+
+          top: 50%;
+          right: 20px;
+
+          transform: translateY(-50%);
+
+          background-image: url('../img/arr-right.svg');
+          background-repeat: no-repeat;
+          background-size: 35px 31px;
+        }
     }
 
-    &--submit {
-      display: block;
-      width: 197px;
+    &__text {
+      font: {
+        family: $main-font;
+        size: 1.875em;
+        weight: 500;
+      }
+
+      color: $text-white;
+      line-height: 1;
+      text-align: center;
+
+      &--continue {
+        display: block;
+        width: 225px;
+      }
+
+      &--submit {
+        display: block;
+        width: 197px;
+      }
     }
   }
 }

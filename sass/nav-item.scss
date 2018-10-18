@@ -1,8 +1,12 @@
 .nav-item {
-  margin-right: 60px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   &__link {
     text-decoration: none;
+    cursor: pointer;
+    outline: none;
   }
 
   &__text {
@@ -12,11 +16,17 @@
     font: {
       family: $main-font;
       size: 1.25em;
-      weight: 600;
+      weight: 400;
     }
   }
 
   &:last-of-type {
     margin-right: 0;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .nav-item {
+    margin-right: 60px;
   }
 }

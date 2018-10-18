@@ -1,8 +1,8 @@
 .footer-copyright {
   width: 100%;
-  
-  margin-top: 10px;
-  margin-bottom: 50px;
+
+  margin-top: 30px;
+  margin-bottom: 60px;
 
   align-self: flex-start;
   display: flex;
@@ -21,5 +21,14 @@
     line-height: 1.813em;
 
     margin: 0;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .footer-copyright {
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
 }

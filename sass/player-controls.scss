@@ -5,23 +5,22 @@
   align-items: flex-start;
 
   background-color: $player-ctrl-bg;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
 
   width: 100%;
-  height: 116px;
+  min-height: 85px;
 
   /*Кнопка общие стили*/
   &__btn {
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
 
     background-color: $controls-bg;
     border: 0;
-
-    margin-right: 20px;
 
     cursor: pointer;
     outline: none;
@@ -40,15 +39,16 @@
       10px 9px rgba(201,64,58,1), 10px 10px rgba(201,64,58,1);
 
     &--play {
+      margin-right: 10px;
       &::after {
         position: absolute;
         content: '';
         background-image: url('../img/play-slider.svg');
         background-repeat: no-repeat;
-        background-size: 23px 24.5px;
+        background-size: 16px 16px;
 
-        width: 23px;
-        height: 24.5px;
+        width: 16px;
+        height: 16px;
 
         top: 50%;
         left: 50%;
@@ -62,12 +62,12 @@
         position: absolute;
         content: '';
 
-        width: 20px;
-        height: 22px;
+        width: 16px;
+        height: 18px;
 
         background-image: url('../img/pause-player.svg');
         background-repeat: no-repeat;
-        background-size: 20px 22px;
+        background-size: 16px 18px;
 
         top: 50%;
         left: 50%;
@@ -83,7 +83,7 @@
         position: absolute;
         content: '\f111';
 
-        font-size: 1.5em;
+        font-size: 1em;
         top: 50%;
         left: 50%;
 
@@ -100,49 +100,11 @@
         position: absolute;
         content: '\f45c';
 
-        font-size: 2em;
+        font-size: 1.5em;
         top: 50%;
         left: 50%;
 
         color: $text-white;
-
-        transform: translate(-50%, -50%);
-      }
-    }
-
-    &--rew {
-      &::after {
-        position: absolute;
-        content: '';
-
-        width: 36px;
-        height: 19px;
-
-        background-image: url('../img/rew-player.svg');
-        background-repeat: no-repeat;
-        background-size: 36px 19px;
-
-        top: 50%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
-      }
-    }
-
-    &--fwd {
-      &::after {
-        position: absolute;
-        content: '';
-
-        width: 36px;
-        height: 19px;
-
-        background-image: url('../img/fwd-player.svg');
-        background-repeat: no-repeat;
-        background-size: 36px 19px;
-
-        top: 50%;
-        left: 50%;
 
         transform: translate(-50%, -50%);
       }
@@ -189,7 +151,7 @@
         position: absolute;
         content: '\f111';
 
-        font-size: 1.5em;
+        font-size: 1em;
         top: 50%;
         left: 50%;
 
@@ -203,7 +165,7 @@
       background-image: url('../img/save.svg');
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: 30px 32px;
+      background-size: 22px 24px;
     }
   }
   /*Блок главных управляющих кнопок*/
@@ -213,20 +175,137 @@
     justify-content: space-between;
     align-items: center;
 
-    margin-right: 30px;
+    margin-right: 56px;
+
+    width: 100px;
   }
 
   &__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: none;
+  }
 
-    margin-right: 30px;
+  &__record {
+    margin-left: auto;
+    margin-right: 38px;
   }
 
   &__save {
-    margin-left: auto;
-    margin-right: 0;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .player-controls {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    min-height: 116px;
+
+    /*Кнопка общие стили*/
+    &__btn {
+      width: 56px;
+      height: 56px;
+
+      &--play {
+        &::after {
+          background-size: 23px 24.5px;
+
+          width: 23px;
+          height: 24.5px;
+        }
+      }
+
+      &--pause {
+        &::after {
+          width: 20px;
+          height: 22px;
+
+          background-size: 20px 22px;
+        }
+      }
+
+      &--rec {
+        display: none;
+
+        .fa-circle {
+          font-size: 1.5em;
+        }
+      }
+
+      &--stop {
+        display: none;
+
+        .fa-square-full {
+          font-size: 2em;
+        }
+      }
+
+      &--rew {
+        &::after {
+          position: absolute;
+          content: '';
+
+          width: 36px;
+          height: 19px;
+
+          background-image: url('../img/rew-player.svg');
+          background-repeat: no-repeat;
+          background-size: 36px 19px;
+
+          top: 50%;
+          left: 50%;
+
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &--fwd {
+        &::after {
+          position: absolute;
+          content: '';
+
+          width: 36px;
+          height: 19px;
+
+          background-image: url('../img/fwd-player.svg');
+          background-repeat: no-repeat;
+          background-size: 36px 19px;
+
+          top: 50%;
+          left: 50%;
+
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &--redrec {
+        .fa-circle::before {
+          font-size: 1.5em;
+        }
+      }
+
+      &--save {
+        background-size: 30px 32px;
+      }
+    }
+    /*Блок главных управляющих кнопок*/
+    // COMBAK: //
+    &__main {
+      margin-right: 30px;
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-right: 30px;
+    }
+
+    &__save {
+      margin-left: auto;
+      margin-right: 0;
+    }
   }
 }

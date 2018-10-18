@@ -4,16 +4,15 @@
   justify-content: flex-start;
   align-items: center;
 
+  align-self: flex-start;
+
   background-color: $howto-bg;
 
-  margin-top: -60px;
-  margin-right: 15px;
-
-  padding-top: 46px;
+  padding-top: 35px;
   padding-bottom: 44px;
 
-  padding-left: 27px;
-  padding-right: 27px;
+  padding-left: 22px;
+  padding-right: 22px;
 
   box-shadow:
     1px 0px rgba(208,62,61,1), 1px 1px rgba(208,62,61,1),
@@ -36,4 +35,18 @@
     18px 17px rgba(208,62,61,1), 18px 18px rgba(208,62,61,1),
     19px 18px rgba(208,62,61,1), 19px 19px rgba(208,62,61,1),
     20px 19px rgba(208,62,61,1), 20px 20px rgba(208,62,61,1);
+}
+
+@media (min-width: $netbooks) {
+  .studio-howto {
+
+    margin-top: -60px;
+    margin-right: 15px;
+
+    padding-top: 46px;
+    padding-bottom: 44px;
+
+    padding-left: 27px;
+    padding-right: 27px;
+  }
 }

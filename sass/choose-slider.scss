@@ -4,23 +4,17 @@
   justify-content: center;
   align-items: center;
 
-  width: 950px;
-  height: 305px;
+  width: 320px;
 
   position: relative;
 
   &__video {
-    width: 307px;
-    margin-left: 10px;
+    width: 280px;
     margin-right: 10px;
-
-    &:nth-of-type(3n) {
-      margin-right: 0;
-    }
   }
 
   &__preview {
-    width: 307px;
+    width: 280px;
     height: 200px;
   }
 
@@ -37,101 +31,121 @@
     margin-top: 20px;
     margin-bottom: 0;
   }
+}
 
-  .prev-1 {
-    position: absolute;
-    top: 28%;
-    left: -5%;
+@media (min-width: $netbooks) {
+  .choose-slider {
+    width: 950px;
+    height: 305px;
 
-    background-image: url('../img/arrow-left.svg');
-    background-repeat: no-repeat;
-    background-size: 23px 24px;
+    &__video {
+      width: 307px;
+      margin-left: 10px;
 
-    width: 23px;
-    height: 24px;
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+    }
 
-    background-color: transparent;
-    border: 0;
-  }
+    &__preview {
+      width: 307px;
+    }
 
-  .next-1 {
-    position: absolute;
-    top: 28%;
-    right: -5%;
+    .prev-1 {
+      position: absolute;
+      top: 28%;
+      left: -5%;
 
-    background-image: url('../img/arrow-right.svg');
-    background-repeat: no-repeat;
-    background-size: 23px 24px;
+      background-image: url('../img/arrow-left.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
 
-    width: 23px;
-    height: 24px;
+      width: 23px;
+      height: 24px;
 
-    background-color: transparent;
-    border: 0;
-  }
+      background-color: transparent;
+      border: 0;
+    }
 
-  .prev-2 {
-    position: absolute;
-    top: 28%;
-    left: -5%;
+    .next-1 {
+      position: absolute;
+      top: 28%;
+      right: -5%;
 
-    background-image: url('../img/arrow-left.svg');
-    background-repeat: no-repeat;
-    background-size: 23px 24px;
+      background-image: url('../img/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
 
-    width: 23px;
-    height: 24px;
+      width: 23px;
+      height: 24px;
 
-    background-color: transparent;
-    border: 0;
-  }
+      background-color: transparent;
+      border: 0;
+    }
 
-  .next-2 {
-    position: absolute;
-    top: 28%;
-    right: -5%;
+    .prev-2 {
+      position: absolute;
+      top: 28%;
+      left: -5%;
 
-    background-image: url('../img/arrow-right.svg');
-    background-repeat: no-repeat;
-    background-size: 23px 24px;
+      background-image: url('../img/arrow-left.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
 
-    width: 23px;
-    height: 24px;
+      width: 23px;
+      height: 24px;
 
-    background-color: transparent;
-    border: 0;
-  }
+      background-color: transparent;
+      border: 0;
+    }
 
-  .prev-3 {
-    position: absolute;
-    top: 28%;
-    left: -5%;
+    .next-2 {
+      position: absolute;
+      top: 28%;
+      right: -5%;
 
-    background-image: url('../img/arrow-left.svg');
-    background-repeat: no-repeat;
-    background-size: 23px 24px;
+      background-image: url('../img/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
 
-    width: 23px;
-    height: 24px;
+      width: 23px;
+      height: 24px;
 
-    background-color: transparent;
-    border: 0;
-  }
+      background-color: transparent;
+      border: 0;
+    }
 
-  .next-3 {
-    position: absolute;
-    top: 28%;
-    right: -5%;
+    .prev-3 {
+      position: absolute;
+      top: 28%;
+      left: -5%;
 
-    background-image: url('../img/arrow-right.svg');
-    background-repeat: no-repeat;
-    background-size: 23px 24px;
+      background-image: url('../img/arrow-left.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
 
-    width: 23px;
-    height: 24px;
+      width: 23px;
+      height: 24px;
 
-    background-color: transparent;
-    border: 0;
+      background-color: transparent;
+      border: 0;
+    }
+
+    .next-3 {
+      position: absolute;
+      top: 28%;
+      right: -5%;
+
+      background-image: url('../img/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: 23px 24px;
+
+      width: 23px;
+      height: 24px;
+
+      background-color: transparent;
+      border: 0;
+    }
   }
 }
 
@@ -150,99 +164,27 @@
     }
 
     .prev-1 {
-      position: absolute;
       top: 38%;
-      left: -5%;
-
-      background-image: url('../img/arrow-left.svg');
-      background-repeat: no-repeat;
-      background-size: 23px 24px;
-
-      width: 23px;
-      height: 24px;
-
-      background-color: transparent;
-      border: 0;
     }
 
     .next-1 {
-      position: absolute;
       top: 38%;
-      right: -5%;
-
-      background-image: url('../img/arrow-right.svg');
-      background-repeat: no-repeat;
-      background-size: 23px 24px;
-
-      width: 23px;
-      height: 24px;
-
-      background-color: transparent;
-      border: 0;
     }
 
     .prev-2 {
-      position: absolute;
       top: 38%;
-      left: -5%;
-
-      background-image: url('../img/arrow-left.svg');
-      background-repeat: no-repeat;
-      background-size: 23px 24px;
-
-      width: 23px;
-      height: 24px;
-
-      background-color: transparent;
-      border: 0;
     }
 
     .next-2 {
-      position: absolute;
       top: 38%;
-      right: -5%;
-
-      background-image: url('../img/arrow-right.svg');
-      background-repeat: no-repeat;
-      background-size: 23px 24px;
-
-      width: 23px;
-      height: 24px;
-
-      background-color: transparent;
-      border: 0;
     }
 
     .prev-3 {
-      position: absolute;
       top: 38%;
-      left: -5%;
-
-      background-image: url('../img/arrow-left.svg');
-      background-repeat: no-repeat;
-      background-size: 23px 24px;
-
-      width: 23px;
-      height: 24px;
-
-      background-color: transparent;
-      border: 0;
     }
 
     .next-3 {
-      position: absolute;
       top: 38%;
-      right: -5%;
-
-      background-image: url('../img/arrow-right.svg');
-      background-repeat: no-repeat;
-      background-size: 23px 24px;
-
-      width: 23px;
-      height: 24px;
-
-      background-color: transparent;
-      border: 0;
     }
   }
 }

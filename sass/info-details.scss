@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
+
+  margin-top: 30px;
 
   &__reserved {
     font: {
@@ -13,5 +15,12 @@
 
     color: $text-gray;
     line-height: 1.813em;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .info-details {
+    align-items: flex-end;
+    margin-top: 0;
   }
 }

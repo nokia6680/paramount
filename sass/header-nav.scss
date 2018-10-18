@@ -6,13 +6,94 @@
 
   position: relative;
 
-  padding-top: 23px;
-  padding-bottom: 22px;
+  padding-top: 22.5px;
+  padding-bottom: 22.5px;
+
+  width: 100%;
+
+  z-index: 100;
 
   &__logo {
     position: absolute;
 
-    top: 20px;
-    left: -150px;
+    width: 65px;
+    height: 75px;
+
+    left: 20px;
+    top: 10px;
+
+    z-index: 100;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-right: 20px;
+    margin-left: 0;
+
+    width: 100%;
+  }
+
+  &__menu {
+    font: {
+      family: $main-font;
+      size: 1.25em;
+      weight: 400;
+    }
+
+    color: #515151;
+    line-height: 1.28em;
+  }
+
+  &__opener {
+    background-color: transparent;
+    border: none;
+
+    position: relative;
+
+    width: 20px;
+    height: 16px;
+
+    margin-left: 10px;
+  }
+
+  .fa-bars {
+    position: absolute;
+    content: '\f0c9';
+
+    font-size: 23px;
+
+    color: #515151;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: $netbooks) {
+  .header-nav {
+    padding-top: 23px;
+    padding-bottom: 22px;
+
+    width: auto;
+
+    &__controls {
+      display: none;
+    }
+
+    &__logo {
+      position: absolute;
+
+      width: 103px;
+      height: 119px;
+
+      top: 20px;
+      left: -150px;
+    }
   }
 }

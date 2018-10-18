@@ -1,12 +1,14 @@
 .footer-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+
+  flex-wrap: wrap;
 
   width: 100%;
-  margin-top: 150px;
 
+  /*К footer-links добавляется модификатор --all, когда активно окно main-all*/
   &--all {
     margin-top: 100px;
   }
@@ -14,12 +16,16 @@
   &__connect {
     display: block;
 
+    width: 280px;
+
     background-color: $btn-red-bg;
     text-align: center;
     text-decoration: none;
 
     cursor: pointer;
     outline: none;
+
+    margin: 0 auto;
   }
 
   &__text {
@@ -28,9 +34,7 @@
 
     display: block;
 
-    padding-left: 60px;
     padding-top: 13px;
-    padding-right: 59px;
     padding-bottom: 12px;
 
     font: {
@@ -45,6 +49,20 @@
     &:hover {
       background-color: $footer-connect-hover-bg;
       color: $footer-connect-hover-text;
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: 150px;
+
+    &--all {
+      margin-top: 100px;
     }
   }
 }

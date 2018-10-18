@@ -2,14 +2,29 @@
   background-color: $studio-header-bg;
   width: 100%;
 
-  padding-bottom: 58px;
+  padding-bottom: 80px;
 
   &__wrapper {
     @include container;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .studio-header {
+    background-color: $studio-header-bg;
+    width: 100%;
+
+    padding-bottom: 58px;
+
+    &__wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
   }
 }

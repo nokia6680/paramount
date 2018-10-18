@@ -2,22 +2,21 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 
-  width: 700px;
+  width: 100%;
+  height: 100%;
 
   position: relative;
 
   &__content {
-    width: 700px;
-    height: 395px;
-
-    border: none;
-  }
+    width: 100%;
+    height: auto;
+ }
 
   &__reddot {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
 
     border-radius: 50%;
     border: none;
@@ -27,7 +26,43 @@
 
     position: absolute;
 
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .player-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 700px;
+
+    position: relative;
+
+    &__content {
+      width: 700px;
+      height: 395px;
+
+      border: none;
+    }
+
+    &__reddot {
+      width: 25px;
+      height: 25px;
+
+      border-radius: 50%;
+      border: none;
+
+      display: block;
+      background-color: $rec-bg;
+
+      position: absolute;
+
+      top: 20px;
+      left: 20px;
+    }
   }
 }

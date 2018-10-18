@@ -1,15 +1,23 @@
 .footer {
   @include container;
-  
+
   background-color: #fff;
+
+  width: 100%;
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+  }
+}
 
-    margin-left: 8.33333%;
-    margin-right: 8.33333%;
+@media (min-width: $netbooks) {
+  .footer {
+    &__wrapper {
+      margin-left: 8.33333%;
+      margin-right: 8.33333%;
+    }
   }
 }

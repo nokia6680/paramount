@@ -1,8 +1,16 @@
 .footer-info {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
   width: 100%;
+}
+
+@media (min-width: $netbooks) {
+  .footer-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }

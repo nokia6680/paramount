@@ -17,13 +17,30 @@
   }
 
   &__title {
-    padding-top: 90px;
-    padding-bottom: 58px;
+    padding-top: 67px;
+    padding-bottom: 95px;
 
-    width: 545px;
+    width: 280px;
+
+    text-align: center;
   }
 
   &__breadcrumbs {
-    align-self: flex-start;
+    align-self: center;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .main-intro {
+    &__title {
+      padding-top: 90px;
+      padding-bottom: 58px;
+
+      width: 545px;
+    }
+
+    &__breadcrumbs {
+      align-self: flex-start;
+    }
   }
 }

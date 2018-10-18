@@ -28,8 +28,8 @@
 					<img class="header-nav__img" src="img/logo.svg" alt="Paramount Comedy Logo"/>
 				</a>
 			</div>
-			<!--Навигация в шапке-->
-			<ul class="header-nav__list nav-list">
+			<!--Навигация в шапке для десктопов-->
+			<ul class="header-nav__list nav-list nav-list--desktop">
 				<li class="nav-list__item nav-item">
 					<a class="nav-item__link nav-item__link--serial" href="#">
 						<span class="nav-item__text">Сериалы</span>
@@ -57,6 +57,36 @@
 				<li class="nav-list__item nav-item">
 					<a class="nav-item__link nav-item__link--search" href="#">
 						<span class="nav-item__text"><i class="fas fa-search"></i></span>
+					</a>
+				</li>
+			</ul>
+			<!--Навигация в шапке для мобильных-->
+			<div class="header-nav__controls">
+				<span class="header-nav__menu">Меню</span>
+				<button class="header-nav__opener" type="button"><i class="fas fa-bars"></i></button>
+			</div>
+			<ul class="header-nav__list nav-list nav-list--closed">
+				<li class="nav-list__item nav-item">
+					<a class="nav-item__link nav-item__link--serial" href="#">
+						<span class="nav-item__text">Сериалы</span>
+					</a>
+				</li>
+
+				<li class="nav-list__item nav-item">
+					<a class="nav-item__link nav-item__link--schedule" href="#">
+						<span class="nav-item__text">Телепрограмма</span>
+					</a>
+				</li>
+
+				<li class="nav-list__item nav-item">
+					<a class="nav-item__link nav-item__link--news" href="#">
+						<span class="nav-item__text">Новости</span>
+					</a>
+				</li>
+
+				<li class="nav-list__item nav-item">
+					<a class="nav-item__link nav-item__link--video" href="#">
+						<span class="nav-item__text">Видео</span>
 					</a>
 				</li>
 			</ul>
@@ -314,7 +344,7 @@
 			<div class="main-all__recent all-recent">
 				<h2 class="all-recent__title">Последние озвучки</h2>
 				<ul class="all-recent__list recent-list" id="recent-all">
-					<li class="recent-list__item recent-item">
+					<li class="recent-list__item recent-item recent-list__item--all">
 						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
 						<img class="recent-item__preview" src="img/4.jpg" alt="video-preview" />
 						<div class="recent-item__info recent-info">
@@ -322,7 +352,7 @@
 							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
 						</div>
 					</li>
-					<li class="recent-list__item recent-item">
+					<li class="recent-list__item recent-item recent-list__item--all">
 						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
 						<img class="recent-item__preview" src="img/5.jpg" alt="video-preview" />
 						<div class="recent-item__info recent-info">
@@ -330,7 +360,7 @@
 							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
 						</div>
 					</li>
-					<li class="recent-list__item recent-item">
+					<li class="recent-list__item recent-item recent-list__item--all">
 						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
 						<img class="recent-item__preview" src="img/6.jpg" alt="video-preview" />
 						<div class="recent-item__info recent-info">
@@ -338,7 +368,7 @@
 							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
 						</div>
 					</li>
-					<li class="recent-list__item recent-item">
+					<li class="recent-list__item recent-item recent-list__item--all">
 						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
 						<img class="recent-item__preview" src="img/4.jpg" alt="video-preview" />
 						<div class="recent-item__info recent-info">
@@ -346,7 +376,7 @@
 							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
 						</div>
 					</li>
-					<li class="recent-list__item recent-item">
+					<li class="recent-list__item recent-item recent-list__item--all">
 						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
 						<img class="recent-item__preview" src="img/5.jpg" alt="video-preview" />
 						<div class="recent-item__info recent-info">
@@ -354,7 +384,7 @@
 							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
 						</div>
 					</li>
-					<li class="recent-list__item recent-item">
+					<li class="recent-list__item recent-item recent-list__item--all">
 						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
 						<img class="recent-item__preview" src="img/6.jpg" alt="video-preview" />
 						<div class="recent-item__info recent-info">
@@ -362,7 +392,7 @@
 							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
 						</div>
 					</li>
-					<li class="recent-list__item recent-item">
+					<li class="recent-list__item recent-item recent-list__item--all">
 						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
 						<img class="recent-item__preview" src="img/4.jpg" alt="video-preview" />
 						<div class="recent-item__info recent-info">
@@ -370,7 +400,7 @@
 							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
 						</div>
 					</li>
-					<li class="recent-list__item recent-item">
+					<li class="recent-list__item recent-item recent-list__item--all">
 						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
 						<img class="recent-item__preview" src="img/5.jpg" alt="video-preview" />
 						<div class="recent-item__info recent-info">
@@ -378,7 +408,7 @@
 							<b class="recent-info__author">Автор &mdash;<span class="recent-info__nickname">Jordan345</span></b>
 						</div>
 					</li>
-					<li class="recent-list__item recent-item">
+					<li class="recent-list__item recent-item recent-list__item--all">
 						<button class="recent-item__play" type="button"><i class="fas fa-play"></i></button>
 						<img class="recent-item__preview" src="img/6.jpg" alt="video-preview" />
 						<div class="recent-item__info recent-info">
@@ -472,6 +502,63 @@
 					<source src="video/3.webm" type='video/webm; codecs="vp8, vorbis"'>
 				</video>
 				<span class="player-window__reddot"></span>
+				<div class="player-window__phrase player-phrase">
+					<ul class="player-phrase__list phrase-list">
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+						<li class="phrase-list__item phrase-item">
+							<b class="phrase-item__time">00:03&mdash;00:05</b>
+							<span class="phrase-item__text">Алло?</span>
+						</li>
+					</ul>
+				</div>
 				<div class="player-window__controls player-controls">
 					<!--Группа кнопок проигрывание, пауза, запись, стоп-->
 					<div class="player-controls__main">
@@ -495,64 +582,6 @@
 					</div>
 				</div>
 			</div>
-			<!--Блок списка фраз-->
-			<div class="video-player__phrase player-phrase">
-				<ul class="player-phrase__list phrase-list">
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-					<li class="phrase-list__item phrase-item">
-						<b class="phrase-item__time">00:03&mdash;00:05</b>
-						<span class="phrase-item__text">Алло?</span>
-					</li>
-				</ul>
-			</div>
 		</div>
 	</div>
 	<!--Попап подтверждения окончания записи-->
@@ -561,7 +590,7 @@
 			<button class="popup-main__close" type="button"><i class="fas fa-times"></i></button>
 			<!--Контент шаг 1-->
 			<div class="popup-main__finish popup-finish">
-				<img class="popup-finish__title" src="img/finish-title.svg" alt="Запись готова?"/>
+				<h3 class="popup-finish__title">Запись готова?</h3>
 				<div class="popup-finish__controls">
 					<button class="popup-finish__continue" type="button">
 						<span class="popup-finish__text popup-finish__text--continue">Нет, продолжить редактирование</span>

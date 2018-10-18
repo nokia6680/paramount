@@ -1,22 +1,35 @@
 .info-item {
-  margin-right: 23px;
+  margin-bottom: 5px;
+  text-align: center;
 
   &__link {
     font: {
       family: $main-font;
-      size: 1.25em;
-      weight: 500;
+      size: 1em;
+      weight: 400;
     }
 
     color: $text-gray;
     line-height: 1.813em;
 
     text-decoration: underline;
-    display: inline;
-    word-wrap: break-word;
 
     &:hover {
       color: $footer-details-hover;
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .info-item {
+    margin-right: 23px;
+    margin-bottom: 0;
+    text-align: left;
+
+    &__link {
+      font: {
+        size: 1.25em;
+      }
     }
   }
 }

@@ -4,40 +4,39 @@
   justify-content: flex-start;
   align-items: center;
 
-  width: 950px;
+  padding-left: 20px;
+  margin-bottom: 30px;
 
   &__title {
     align-self: flex-start;
     font: {
       family: $main-font;
-      size: 1.875em;
-      weight: 500;
+      size: 1.5em;
+      weight: 400;
     }
 
     color: $text-black;
     line-height: 1;
+
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .choose-item {
+    width: 950px;
+
+    &__title {
+      font: {
+        size: 1.875em;
+      }
+    }
   }
 }
 
 @media (min-width: $widebooks) {
   .choose-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
     width: 1420px;
-
-    &__title {
-      align-self: flex-start;
-      font: {
-        family: $main-font;
-        size: 1.875em;
-        weight: 500;
-      }
-
-      color: $text-black;
-      line-height: 1;
-    }
   }
 }

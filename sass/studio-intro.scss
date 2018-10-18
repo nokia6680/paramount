@@ -2,9 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-
-  padding-left: 15px;
+  align-items: center;
 
   &__description {
     font: {
@@ -16,8 +14,11 @@
     color: $text-white;
     line-height: normal;
 
-    width: 625px;
-    margin-top: 72px;
+    width: 280px;
+
+    margin-top: 62px;
+
+    text-align: center;
   }
 
   &__link {
@@ -25,10 +26,14 @@
     text-decoration: none;
     text-align: center;
 
-    padding-left: 43px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 100px;
+    align-self: flex-start;
+
+    padding-left: 30px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 88px;
+
+    margin-bottom: 70px;
 
     position: relative;
 
@@ -74,15 +79,45 @@
 
   &__text {
     display: block;
-    width: 212px;
+    width: 142px;
 
     font: {
       family: $main-font;
-      size: 1.875em;
+      size: 1.25em;
       weight: 400;
     }
 
     color: $text-white;
     line-height: 1;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .studio-intro {
+    padding-left: 15px;
+
+    &__description {
+      width: 625px;
+      margin-top: 72px;
+
+      text-align: left;
+    }
+
+    &__link {
+      padding-left: 43px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 100px;
+
+      margin-bottom: 0;
+    }
+
+    &__text {
+      width: 212px;
+
+      font: {
+        size: 1.875em;
+      }
+    }
   }
 }

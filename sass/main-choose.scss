@@ -6,12 +6,13 @@
 
   width: 100%;
 
-  padding-top: 90px;
+  padding-top: 75px;
+  margin-bottom: 60px;
 
   &__title {
     font: {
       family: $main-font;
-      size: 2.625em;
+      size: 1.875em;
       weight: 500;
     }
 
@@ -19,6 +20,26 @@
     line-height: 1;
 
     margin-top: 0;
-    margin-bottom: 54px;
+    margin-bottom: 30px;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .main-choose {
+    padding-top: 90px;
+    margin-bottom: 0;
+
+    &__title {
+      font: {
+        size: 2.625em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 54px;
+
+      text-align: left;
+    }
   }
 }
