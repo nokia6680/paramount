@@ -1,5 +1,5 @@
 .popup-details {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -61,6 +61,19 @@
     color: $text-white;
     line-height: 1;
     text-align: center;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .popup-details {
+    padding-top: 255px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 373px;
+
+    &__controls {
+      margin-top: 25px;
+    }
   }
 }
 
