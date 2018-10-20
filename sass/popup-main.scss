@@ -1,5 +1,5 @@
 .popup-main {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -42,6 +42,9 @@
 
     margin-right: 0;
     margin-left: auto;
+
+    cursor: pointer;
+    outline: none;
   }
 
   .fa-times::before {
@@ -64,32 +67,13 @@
 
 @media (min-width: $netbooks) {
   .popup-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100vh;
-
-    background-color: rgba(0, 0, 0, 0.8);
-
-    z-index: 100;
-
     &__wrapper {
-      display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
 
-      position: relative;
-
-      width: 1082px;
-      height: 511px;
+      width: 586px;
+      height: auto;
 
       margin-right: 30px;
 
@@ -126,38 +110,6 @@
         28px 27px rgba(75,141,223,1), 28px 28px rgba(75,141,223,1),
         29px 28px rgba(75,141,223,1), 29px 29px rgba(75,141,223,1),
         30px 29px rgba(75,141,223,1), 30px 30px rgba(75,141,223,1),
-    }
-
-    &__close {
-      background-color: $btn-red-bg;
-      border: none;
-      position: absolute;
-
-      width: 40px;
-      height: 40px;
-
-      right: 0;
-      top: 0;
-
-      margin-right: 0;
-      margin-left: auto;
-    }
-
-    .fa-times::before {
-      position: absolute;
-      content: '\f00d';
-
-      color: #ebca52;
-
-      width: 40px;
-      height: 40px;
-
-      font-size: 2.5em;
-
-      top: 50%;
-      left: 50%;
-
-      transform: translate(-50%, -50%);
     }
   }
 }
