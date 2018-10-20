@@ -30,6 +30,17 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .main-intro {
+    &__breadcrumbs {
+      align-self: flex-start;
+
+      margin-left: 36px;
+      margin-top: auto;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .main-intro {
     &__title {
@@ -37,10 +48,6 @@
       padding-bottom: 58px;
 
       width: 545px;
-    }
-
-    &__breadcrumbs {
-      align-self: flex-start;
     }
   }
 }

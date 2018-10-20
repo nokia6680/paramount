@@ -92,6 +92,38 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .studio-intro {
+    &__description {
+      font: {
+        size: 1.875em;
+      }
+
+      width: 447px;
+
+      margin-top: 72px;
+    }
+
+    &__link {
+      align-self: center;
+
+      padding-left: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      margin-bottom: 65px;
+    }
+
+    &__text {
+      width: 212px;
+
+      font: {
+        size: 1.875em;
+      }
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .studio-intro {
     padding-left: 15px;

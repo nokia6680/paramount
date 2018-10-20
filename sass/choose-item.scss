@@ -23,6 +23,21 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .choose-item {
+    padding-left: 0;
+    margin-bottom: 30px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .choose-item {
     width: 950px;

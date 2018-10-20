@@ -53,6 +53,14 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .footer-links {
+    &--all {
+      margin-top: 100px;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .footer-links {
     flex-direction: row;

@@ -26,20 +26,22 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .main-choose {
+    padding-top: 55px;
+  }
+}
+
 @media (min-width: $netbooks) {
   .main-choose {
-    padding-top: 90px;
-    margin-bottom: 0;
+    padding-top: 72px;
 
     &__title {
       font: {
         size: 2.625em;
       }
 
-      margin-top: 0;
-      margin-bottom: 54px;
-
-      text-align: left;
+      margin-bottom: 40px;
     }
   }
 }

@@ -75,6 +75,17 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .header-nav {
+    &__logo {
+      left: 16px;
+      top: 8px;
+
+      z-index: 100;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .header-nav {
     padding-top: 23px;

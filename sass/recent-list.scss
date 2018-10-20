@@ -20,9 +20,19 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .recent-list {
+    &__item--all {
+      width: 280px;
+      padding-left: 0;
+
+      margin-bottom: 30px;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .recent-list {
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;

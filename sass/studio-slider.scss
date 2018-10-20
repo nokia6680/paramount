@@ -49,18 +49,22 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .studio-slider {
+    width: 460px;
+    height: auto;
+
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+}
+
 @media (min-width: $netbooks) {
   .studio-slider {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-left: 0;
 
     width: 950px;
     height: 305px;
-
-    position: relative;
 
     .prev {
       display: block;

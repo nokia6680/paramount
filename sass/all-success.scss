@@ -47,7 +47,7 @@
 
     margin-left: -10px;
     margin-bottom: 40px;
-    
+
     padding-left: 33px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -107,6 +107,19 @@
 
     color: $text-white;
     line-height: 1;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .all-success {
+    &__description {
+      width: 325px;
+    }
+
+    &__link {
+      margin-left: 0;
+      margin-bottom: 55px;
+    }
   }
 }
 

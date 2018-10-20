@@ -33,6 +33,12 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .choose-slider {
+    width: 460px;
+  }
+}
+
 @media (min-width: $netbooks) {
   .choose-slider {
     width: 950px;

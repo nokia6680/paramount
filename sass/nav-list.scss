@@ -31,6 +31,16 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .nav-list {
+    &--opened {
+      top: 70px;
+
+      z-index: 1;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .nav-list {
     &--closed {
