@@ -33,9 +33,7 @@
 @media (min-width: $smartphones) {
   .main-intro {
     &__breadcrumbs {
-      align-self: flex-start;
-
-      margin-left: 36px;
+      align-self: center;
       margin-top: auto;
     }
   }
