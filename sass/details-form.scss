@@ -54,6 +54,12 @@
   }
 }
 
+@media (min-width: $tablets) {
+  .details-form {
+    width: 490px;
+  }
+}
+
 @media (min-width: $netbooks) {
   .details-form {
     &__label {

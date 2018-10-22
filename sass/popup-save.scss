@@ -95,7 +95,7 @@
 @media (min-width: $smartphones) {
   .popup-save {
     padding-top: 255px;
-    padding-bottom: 365px;
+    padding-bottom: auto;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -118,6 +118,25 @@
       &--red {
         margin-bottom: 0;
         margin-right: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .popup-save {
+    padding-top: 255px;
+    padding-bottom: auto;
+
+    &__title {
+      width: 410px;
+      display: block;
+    }
+
+    &__btn {
+      &--red {
+        margin-bottom: 0;
+        margin-right: 40px;
       }
     }
   }

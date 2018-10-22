@@ -121,6 +121,37 @@
   }
 }
 
+@media (min-width: $tablets) {
+  .popup-finish {
+    width: 100%;
+
+    padding-top: 256px;
+    padding-bottom: auto;
+
+    &__title {
+      font: {
+        size: 2.625em;
+      }
+
+      margin-bottom: 75px;
+    }
+
+    &__controls {
+      margin-top: 0;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__continue {
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .popup-finish {
     padding-top: 65px;

@@ -194,6 +194,143 @@
   }
 }
 
+@media (min-width: $tablets) {
+  .player-controls {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    width: 100%;
+    min-height: 116px;
+
+    /*Кнопка общие стили*/
+    &__btn {
+      width: 56px;
+      height: 56px;
+
+      &--play {
+        margin-right: 0;
+        &::after {
+          background-size: 22px 24px;
+
+          width: 22px;
+          height: 24px;
+        }
+      }
+
+      &--pause {
+        &::after {
+          width: 20px;
+          height: 22px;
+
+          background-size: 20px 22px;
+        }
+      }
+
+      &--rec {
+        display: none;
+
+        .fa-circle {
+          content: '\f111';
+
+          font-size: 1.375em;
+        }
+      }
+
+      &--stop {
+        display: none;
+
+        .fa-square-full {
+          position: absolute;
+          content: '\f45c';
+
+          font-size: 1.5em;
+        }
+      }
+
+      &--rew {
+        &::after {
+          position: absolute;
+          content: '';
+
+          width: 36px;
+          height: 19px;
+
+          background-image: url('../img/rew-player.svg');
+          background-repeat: no-repeat;
+          background-size: 36px 19px;
+
+          top: 50%;
+          left: 50%;
+
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &--fwd {
+        &::after {
+          position: absolute;
+          content: '';
+
+          width: 36px;
+          height: 19px;
+
+          background-image: url('../img/fwd-player.svg');
+          background-repeat: no-repeat;
+          background-size: 36px 19px;
+
+          top: 50%;
+          left: 50%;
+
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &--redrec {
+        .fa-circle::before {
+          content: '\f111';
+
+          font-size: 1.375em;
+        }
+      }
+
+      &--save {
+        background-image: url('../img/save.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 22px 24px;
+      }
+    }
+    /*Блок главных управляющих кнопок*/
+    &__main {
+      margin-right: 50px;
+
+      width: 140px;
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      width: 140px;
+
+      margin-right: 50px;
+    }
+
+    &__record {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    &__save {
+      margin-right: 10px;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .player-controls {
     padding-top: 24px;

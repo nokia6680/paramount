@@ -23,3 +23,40 @@
     line-height: 1.5em;
   }
 }
+
+@media (min-width: $tablets) {
+  .phrase-item {
+    margin-bottom: 3px;
+    &__time {
+      font: {
+        size: 1.25em;
+      }
+
+      line-height: 1.5em;
+    }
+
+    &__text {
+      font: {
+        size: 1.25em;
+      }
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .phrase-item {
+    margin-bottom: 5px;
+
+    &__time {
+      font: {
+        size: 1em;
+      }
+    }
+
+    &__text {
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}
