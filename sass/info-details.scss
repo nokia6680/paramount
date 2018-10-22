@@ -18,6 +18,12 @@
   }
 }
 
+@media (min-width: $tablets) {
+  .info-details {
+    margin-top: 0;
+  }
+}
+
 @media (min-width: $netbooks) {
   .info-details {
     align-items: flex-end;

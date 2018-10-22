@@ -17,8 +17,8 @@
   }
 
   &__title {
-    padding-top: 67px;
-    padding-bottom: 95px;
+    margin-top: 67px;
+    margin-bottom: 95px;
 
     width: 280px;
 
@@ -33,7 +33,25 @@
 @media (min-width: $smartphones) {
   .main-intro {
     &__breadcrumbs {
-      align-self: center;
+      align-self: flex-start;
+      margin-left: 36px;
+      margin-top: auto;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .main-intro {
+    background-size: cover;
+    &__title {
+      width: 545px;
+      margin-top: 77px;
+      margin-bottom: 58px;
+    }
+
+    &__breadcrumbs {
+      align-self: flex-start;
+      margin-left: 20px;
       margin-top: auto;
     }
   }
@@ -44,8 +62,6 @@
     &__title {
       padding-top: 90px;
       padding-bottom: 58px;
-
-      width: 545px;
     }
   }
 }

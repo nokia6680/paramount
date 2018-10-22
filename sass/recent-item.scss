@@ -52,14 +52,27 @@
   }
 }
 
-@media (min-width: $netbooks) {
+@media (min-width: $tablets) {
   .recent-item {
-    width: 307px;
-    position: relative;
+    min-width: 334px;
+    max-width: 334px;
 
+    margin-top: 10px;
     margin-right: 10px;
     margin-left: 10px;
-    margin-top: 10px;
+
+    &__preview {
+      width: 334px;
+      height: 200px;
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .recent-item {
+    min-width: 307px;
+    max-width: 307px;
+    position: relative;
 
     &__preview {
       width: 307px;

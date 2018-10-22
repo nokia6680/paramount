@@ -13,15 +13,21 @@
   margin-top: 30px;
 }
 
-@media (min-width: $netbooks) {
+@media (min-width: $tablets) {
   .info-list {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
 
     width: 50%;
-    
+
     margin-top: 0;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .info-list {
+    flex-direction: row;
   }
 }

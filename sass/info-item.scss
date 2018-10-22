@@ -20,16 +20,21 @@
   }
 }
 
-@media (min-width: $netbooks) {
+@media (min-width: $tablets) {
   .info-item {
-    margin-right: 23px;
-    margin-bottom: 0;
     text-align: left;
+    margin-bottom: 0;
 
     &__link {
       font: {
         size: 1.25em;
       }
     }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .info-item {
+    margin-right: 23px;
   }
 }

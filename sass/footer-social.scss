@@ -12,6 +12,13 @@
   margin-top: 30px;
 }
 
+@media (min-width: $tablets) {
+  .footer-social {
+    margin-left: 30px;
+    margin-top: 0;
+  }
+}
+
 @media (min-width: $netbooks) {
   .footer-social {
     margin-left: 85px;

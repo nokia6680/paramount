@@ -61,6 +61,29 @@
   }
 }
 
+@media (min-width: $tablets) {
+  .footer-links {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 5px;
+
+    &--all {
+      margin-top: 100px;
+    }
+
+    &__connect {
+      width: 245px;
+      align-self: flex-start;
+
+      margin: 0;
+    }
+
+    &__text {
+      line-height: 1.375em;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .footer-links {
     flex-direction: row;

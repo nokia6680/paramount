@@ -32,9 +32,9 @@
   }
 }
 
-@media (min-width: $netbooks) {
+@media (min-width: $tablets) {
   .main-choose {
-    padding-top: 72px;
+    padding-top: 70px;
 
     &__title {
       font: {
@@ -43,5 +43,11 @@
 
       margin-bottom: 40px;
     }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .main-choose {
+    padding-top: 72px;
   }
 }

@@ -38,15 +38,19 @@
   }
 }
 
-@media (min-width: $netbooks) {
+@media (min-width: $tablets) {
   .choose-item {
-    width: 950px;
-
     &__title {
       font: {
         size: 1.875em;
       }
     }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .choose-item {
+    width: 950px;
   }
 }
 

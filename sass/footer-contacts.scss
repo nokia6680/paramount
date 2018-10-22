@@ -29,6 +29,15 @@
   }
 }
 
+@media (min-width: $tablets) {
+  .footer-contacts {
+    margin-top: 0;
+
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+}
+
 @media (min-width: $netbooks) {
   .footer-contacts {
     justify-content: flex-start;

@@ -37,9 +37,14 @@
     20px 19px rgba(208,62,61,1), 20px 20px rgba(208,62,61,1);
 }
 
+@media (min-width: $tablets) {
+  .studio-howto {
+    margin-top: -190px;
+  }
+}
+
 @media (min-width: $netbooks) {
   .studio-howto {
-
     margin-top: -60px;
     margin-right: 15px;
 

@@ -124,6 +124,20 @@
   }
 }
 
+@media (min-width: $tablets) {
+  .studio-intro {
+    &__description {
+      width: 334px;
+      text-align: left;
+    }
+
+    &__link {
+      align-self: flex-start;
+      margin-bottom: 0;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .studio-intro {
     padding-left: 15px;

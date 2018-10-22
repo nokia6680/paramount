@@ -94,6 +94,23 @@
   }
 }
 
+@media (min-width: $tablets) {
+  .studio-recent {
+    &__title {
+      margin-bottom: 40px;
+
+      font: {
+        size: 2.625em;
+      }
+    }
+
+    &__control {
+      align-self: center;
+      margin-left: 0;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .studio-recent {
     padding-top: 65px;

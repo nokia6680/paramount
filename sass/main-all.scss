@@ -9,6 +9,12 @@
   padding-top: 55px;
 }
 
+@media (min-width: $tablets) {
+  .main-all {
+    padding-top: 72px;
+  }
+}
+
 @media (min-width: $netbooks) {
   .main-all {
     padding-top: 81px;

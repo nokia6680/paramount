@@ -25,6 +25,14 @@
   }
 }
 
+@media (min-width: $tablets) {
+  .footer-copyright {
+    &__description {
+      text-align: left;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .footer-copyright {
     margin-bottom: 50px;

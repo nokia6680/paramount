@@ -20,6 +20,18 @@
   }
 }
 
+@media (min-width: $tablets) {
+  .all-recent {
+    &__title {
+      font: {
+        size: 2.625em;
+      }
+
+      margin-bottom: 30px;
+    }
+  }
+}
+
 @media (min-width: $netbooks) {
   .all-recent {
     &__title {
