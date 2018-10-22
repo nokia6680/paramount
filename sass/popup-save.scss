@@ -7,7 +7,6 @@
   width: 100%;
 
   padding-top: 156px;
-  padding-bottom: 187px;
   padding-left: 85px;
   padding-right: 85px;
 
@@ -95,7 +94,6 @@
 @media (min-width: $smartphones) {
   .popup-save {
     padding-top: 255px;
-    padding-bottom: auto;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -126,7 +124,6 @@
 @media (min-width: $tablets) {
   .popup-save {
     padding-top: 255px;
-    padding-bottom: auto;
 
     &__title {
       width: 410px;
@@ -178,8 +175,6 @@
 
       padding-top: 18px;
       padding-bottom: 18px;
-      padding-left: auto;
-      padding-right: auto;
 
       text-align: center;
 
