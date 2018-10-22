@@ -154,17 +154,23 @@
 
 @media (min-width: $netbooks) {
   .popup-finish {
-    padding-top: 65px;
-    padding-bottom: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
 
     &__title {
       font: {
         size: 2.625em;
       }
+
+      line-height: 1;
+
+      margin-bottom: 40px;
+      margin-top: 65px;
     }
 
     &__controls {
-      margin-top: 50px;
+      margin-top: 0;
+      margin-bottom: 40px;
 
       display: flex;
       flex-direction: row;
@@ -173,74 +179,40 @@
     }
 
     &__continue {
-      margin-right: 100px;
+      margin-right: 40px;
 
-      padding-top: 20px;
-      padding-left: 68px;
-      padding-bottom: 20px;
-      padding-right: 20px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 0;
+      padding-right: 0;
 
-      width: auto;
+      width: 205px;
 
       margin-bottom: 0;
-
-      &::after {
-        position: absolute;
-        content: '';
-
-        width: 35px;
-        height: 31px;
-
-        top: 50%;
-        left: 20px;
-
-        transform: translateY(-50%);
-
-        background-image: url('../img/arr-left.svg');
-        background-repeat: no-repeat;
-        background-size: 35px 31px;
-      }
     }
 
     &__submit {
-      padding-top: 20px;
-      padding-left: 33px;
-      padding-bottom: 20px;
-      padding-right: 70px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 0;
+      padding-right: 0;
 
-      width: auto;
-
-        &::after {
-          position: absolute;
-          content: '';
-
-          width: 35px;
-          height: 31px;
-
-          top: 50%;
-          right: 20px;
-
-          transform: translateY(-50%);
-
-          background-image: url('../img/arr-right.svg');
-          background-repeat: no-repeat;
-          background-size: 35px 31px;
-        }
+      width: 205px;
     }
 
     &__text {
       font: {
-        size: 1.875em;
+        size: 1.125em;
       }
 
       &--continue {
         display: block;
-        width: 225px;
+        width: 135px;
       }
 
       &--submit {
         display: block;
-        width: 197px;
+        width: 118px;
       }
     }
   }

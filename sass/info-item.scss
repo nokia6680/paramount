@@ -35,6 +35,9 @@
 
 @media (min-width: $netbooks) {
   .info-item {
-    margin-right: 23px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    word-wrap: break-word;
+    display: inline;
   }
 }

@@ -1,5 +1,5 @@
 .popup-save {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -156,6 +156,8 @@
 
       display: block;
       width: 410px;
+
+      margin: 0;
     }
 
     &__controls {
@@ -172,7 +174,7 @@
     &__btn {
       background-color: $controls-bg;
 
-      margin-right: 50px;
+      margin-right: 0;
 
       padding-top: 18px;
       padding-bottom: 18px;
@@ -186,12 +188,16 @@
         margin-bottom: 0;
 
         width: 138px;
+
+        margin-right: 94px;
       }
 
       &--cancel {
         display: block;
 
         width: 118px;
+
+        margin-right: 20px;
       }
 
       &--save {
