@@ -69,6 +69,9 @@
       border: 0;
 
       z-index: 100;
+
+      cursor: pointer;
+      outline: none;
     }
 
     .next-1 {
@@ -87,6 +90,9 @@
       border: 0;
 
       z-index: 100;
+
+      cursor: pointer;
+      outline: none;
     }
 
     .prev-2 {
@@ -105,6 +111,9 @@
       border: 0;
 
       z-index: 100;
+
+      cursor: pointer;
+      outline: none;
     }
 
     .next-2 {
@@ -123,6 +132,9 @@
       border: 0;
 
       z-index: 100;
+
+      cursor: pointer;
+      outline: none;
     }
 
     .prev-3 {
@@ -141,6 +153,9 @@
       border: 0;
 
       z-index: 100;
+
+      cursor: pointer;
+      outline: none;
     }
 
     .next-3 {
@@ -159,6 +174,9 @@
       border: 0;
 
       z-index: 100;
+
+      cursor: pointer;
+      outline: none;
     }
   }
 }
@@ -214,6 +232,62 @@
 
     .next-3 {
       top: 30%;
+      right: -2%;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .choose-slider {
+    width: 1440px;
+
+    &__video {
+      min-width: 345px;
+      max-width: 345px;
+
+      margin-right: 20px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+    }
+
+    &__preview {
+      min-width: 345px;
+      max-width: 345px;
+    }
+
+    .prev-1 {
+      top: 36%;
+      left: -3%;
+    }
+
+    .next-1 {
+      top: 36%;
+      right: -2%;
+    }
+
+    .prev-2 {
+      top: 36%;
+      left: -3%;
+    }
+
+    .next-2 {
+      top: 36%;
+      right: -2%;
+    }
+
+    .prev-3 {
+      top: 36%;
+      left: -3%;
+    }
+
+    .next-3 {
+      top: 36%;
       right: -2%;
     }
   }

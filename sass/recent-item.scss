@@ -84,3 +84,20 @@
     }
   }
 }
+
+
+@media (min-width: $widebooks) {
+  .recent-item {
+    min-width: 345px;
+    max-width: 345px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &__preview {
+      width: 345px;
+      height: auto;
+    }
+  }
+}

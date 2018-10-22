@@ -1,8 +1,11 @@
 $(document).ready(function(){
   $('.studio-slider').slick({
     infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    arrows: true,
+    prevArrow: '<div class="prev"></div>',
+    nextArrow: '<div class="next"></div>',
     responsive: [
       {
         breakpoint: 1500,
@@ -55,8 +58,11 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.choose-slider__first').slick({
     infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    arrows: true,
+    prevArrow: '<div class="prev-1"></div>',
+    nextArrow: '<div class="next-1"></div>',
     responsive: [
       {
         breakpoint: 1500,
@@ -109,8 +115,11 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.choose-slider__second').slick({
     infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    arrows: true,
+    prevArrow: '<div class="prev-2"></div>',
+    nextArrow: '<div class="next-2"></div>',
     responsive: [
       {
         breakpoint: 1500,
@@ -163,8 +172,11 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.choose-slider__third').slick({
     infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    arrows: true,
+    prevArrow: '<div class="prev-3"></div>',
+    nextArrow: '<div class="next-3"></div>',
     responsive: [
       {
         breakpoint: 1500,
