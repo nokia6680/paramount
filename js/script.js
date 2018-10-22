@@ -5,6 +5,18 @@ $(document).ready(function(){
     slidesToScroll: 3,
     responsive: [
       {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: false,
+          arrows: true,
+          prevArrow: '<div class="prev"></div>',
+          nextArrow: '<div class="next"></div>'
+        }
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
@@ -46,6 +58,18 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: false,
+          arrows: true,
+          prevArrow: '<div class="prev-1"></div>',
+          nextArrow: '<div class="next-1"></div>'
+        }
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -89,6 +113,18 @@ $(document).ready(function(){
     slidesToScroll: 3,
     responsive: [
       {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: false,
+          arrows: true,
+          prevArrow: '<div class="prev-2"></div>',
+          nextArrow: '<div class="next-2"></div>'
+        }
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
@@ -130,6 +166,18 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: false,
+          arrows: true,
+          prevArrow: '<div class="prev-3"></div>',
+          nextArrow: '<div class="next-3"></div>'
+        }
+      },
       {
         breakpoint: 1024,
         settings: {

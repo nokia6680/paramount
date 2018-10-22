@@ -166,11 +166,7 @@
 @media (min-width: $netbooks) {
   .all-success {
     &__title {
-      font: {
-        size: 2.625em;
-      }
-
-      text-align: left;
+      text-align: center;
     }
 
     &__description {
@@ -179,30 +175,7 @@
         size: 1.875em;
       }
 
-      margin-bottom: 40px;
-
       text-align: center;
-    }
-
-    &__link {
-      margin-left: 0;
-      padding-left: 43px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-right: 100px;
-
-      &::after {
-        width: 38px;
-        height: 38px;
-      }
-    }
-
-    &__text {
-      width: 212px;
-
-      font: {
-        size: 1.875em;
-      }
     }
   }
 }

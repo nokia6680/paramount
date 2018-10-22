@@ -59,9 +59,10 @@
 
 @media (min-width: $netbooks) {
   .main-intro {
+    background-size: contain;
     &__title {
-      padding-top: 90px;
-      padding-bottom: 58px;
+      margin-top: 77px;
+      margin-bottom: 58px;
     }
   }
 }

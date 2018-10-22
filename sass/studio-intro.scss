@@ -145,6 +145,7 @@
     &__description {
       width: 625px;
       margin-top: 72px;
+      margin-bottom: 45px;
 
       text-align: left;
     }
@@ -156,14 +157,7 @@
       padding-right: 100px;
 
       margin-bottom: 0;
-    }
-
-    &__text {
-      width: 212px;
-
-      font: {
-        size: 1.875em;
-      }
+      margin-top: 0;
     }
   }
 }

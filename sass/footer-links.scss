@@ -8,11 +8,6 @@
 
   width: 100%;
 
-  /*К footer-links добавляется модификатор --all, когда активно окно main-all*/
-  &--all {
-    margin-top: 100px;
-  }
-
   &__connect {
     display: block;
 
@@ -53,23 +48,11 @@
   }
 }
 
-@media (min-width: $smartphones) {
-  .footer-links {
-    &--all {
-      margin-top: 100px;
-    }
-  }
-}
-
 @media (min-width: $tablets) {
   .footer-links {
     flex-wrap: nowrap;
     align-items: flex-start;
     margin-bottom: 5px;
-
-    &--all {
-      margin-top: 100px;
-    }
 
     &__connect {
       width: 245px;
@@ -89,11 +72,5 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-
-    margin-top: 150px;
-
-    &--all {
-      margin-top: 100px;
-    }
   }
 }

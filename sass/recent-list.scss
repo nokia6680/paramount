@@ -66,16 +66,20 @@
 
 @media (min-width: $netbooks) {
   .recent-list {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-
     margin-bottom: 60px;
 
-    &__item {
+    width: 960px;
+
+    &__item--all {
       margin-right: 20px;
-      margin-bottom: 70px;
+      margin-bottom: 30px;
+
+      min-width: 307px;
+      max-width: 307px;
+
+      &:nth-of-type(2n) {
+        margin-right: 20px;
+      }
 
       &:nth-of-type(3n) {
         margin-right: 0;

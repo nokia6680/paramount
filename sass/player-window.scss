@@ -51,14 +51,32 @@
 
 @media (min-width: $netbooks) {
   .player-window {
+    flex-direction: column;
     align-items: flex-start;
 
+    width: 70%;
+
+    &__content {
+      width: 100%;
+      max-height: 395px;
+      max-height: auto;
+    }
+
+    &__reddot {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+@media (min-width: $netbooks-hd) {
+  .player-window {
     width: 700px;
 
     &__content {
-      width: 700px;
-      height: 395px;
-      max-height: auto;
+      width: 100%;
+      max-height: 395px;
+      max-height: 395px;
     }
 
     &__reddot {

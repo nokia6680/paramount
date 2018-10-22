@@ -28,6 +28,12 @@
 
 @media (min-width: $netbooks) {
   .phrase-list {
-    height: 465px;
+    height: 388px;
+  }
+}
+
+@media (min-width: $netbooks-hd) {
+  .phrase-list {
+    height: 490px;
   }
 }

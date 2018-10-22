@@ -71,44 +71,19 @@
 @media (min-width: $netbooks) {
   .studio-slider {
     margin-left: 0;
+    margin-bottom: 40px;
 
-    width: 950px;
-    height: 305px;
+    width: 960px;
+    height: auto;
 
     .prev {
-      display: block;
-
-      position: absolute;
-      top: 28%;
-      left: -5%;
-
-      background-image: url('../img/arrow-left.svg');
-      background-repeat: no-repeat;
-      background-size: 23px 24px;
-
-      width: 23px;
-      height: 24px;
-
-      background-color: transparent;
-      border: 0;
+      top: 30%;
+      left: -2%;
     }
 
     .next {
-      display: block;
-
-      position: absolute;
-      top: 28%;
-      right: -5%;
-
-      background-image: url('../img/arrow-right.svg');
-      background-repeat: no-repeat;
-      background-size: 23px 24px;
-
-      width: 23px;
-      height: 24px;
-
-      background-color: transparent;
-      border: 0;
+      top: 30%;
+      right: -2%;
     }
   }
 }

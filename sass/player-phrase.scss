@@ -10,6 +10,10 @@
 
   position: relative;
 
+  &--desktop {
+    display: none;
+  }
+
   &::after {
     position: absolute;
     content: '';
@@ -51,8 +55,39 @@
     padding-left: 27px;
     padding-right: 33px;
 
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: flex;
+      height: 388px;
+    }
+
     &::after {
-      width: 359px;
+      width: 330px;
+      height: 50px;
+    }
+  }
+}
+
+@media (min-width: $netbooks-hd) {
+  .player-phrase {
+    width: 382px;
+    padding-top: 42px;
+    padding-left: 27px;
+    padding-right: 33px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      height: 490px;
+    }
+
+    &::after {
+      width: 330px;
       height: 50px;
     }
   }
