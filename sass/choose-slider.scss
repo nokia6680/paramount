@@ -1,7 +1,7 @@
 .choose-slider {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   width: 320px;
@@ -205,6 +205,44 @@
       max-width: 307px;
     }
 
+    .slick-disabled {
+      opacity: 0.5 !important;
+    }
+
+    .prev-1 {
+      top: 32%;
+      left: 0.5%;
+    }
+
+    .next-1 {
+      top: 32%;
+      right: 2%;
+    }
+
+    .prev-2 {
+      top: 32%;
+      left: 0.5%;
+    }
+
+    .next-2 {
+      top: 32%;
+      right: 2%;
+    }
+
+    .prev-3 {
+      top: 32%;
+      left: 0.5%;
+    }
+
+    .next-3 {
+      top: 32%;
+      right: 2%;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .choose-slider {
     .prev-1 {
       top: 30%;
       left: -3%;
