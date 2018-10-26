@@ -35,6 +35,9 @@
 
     margin-bottom: 70px;
 
+    cursor: pointer;
+    outline: none;
+
     position: relative;
 
     background-color: $btn-red-bg;
@@ -74,6 +77,11 @@
       right: 31px;
 
       transform: translateY(-50%);
+    }
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $text-white;
     }
   }
 

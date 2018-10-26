@@ -40,6 +40,9 @@
 
     position: relative;
 
+    cursor: pointer;
+    outline: none;
+
     background-color: $btn-red-bg;
 
     box-shadow:
@@ -63,6 +66,11 @@
       18px 17px rgba(75,141,223,1), 18px 18px rgba(75,141,223,1),
       19px 18px rgba(75,141,223,1), 19px 19px rgba(75,141,223,1),
       20px 19px rgba(75,141,223,1), 20px 20px rgba(75,141,223,1);
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $text-white;
+    }
   }
 
   &__text {

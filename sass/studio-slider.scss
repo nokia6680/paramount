@@ -46,6 +46,9 @@
       border: 0;
 
       z-index: 100;
+
+      cursor: pointer;
+      outline: none;
     }
 
     .next {
@@ -64,10 +67,14 @@
       border: 0;
 
       z-index: 100;
+
+      cursor: pointer;
+      outline: none;
     }
 
     .slick-disabled {
       opacity: 0.5 !important;
+      cursor: default;
     }
   }
 }

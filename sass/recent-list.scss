@@ -18,6 +18,15 @@
 
     margin-bottom: 30px;
   }
+
+  &__link--all {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $text-black;
+    }
+  }
 }
 
 @media (min-width: $smartphones) {

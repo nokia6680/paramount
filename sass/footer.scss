@@ -1,9 +1,9 @@
 .footer {
-  @include container;
-
   background-color: #fff;
 
   width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 
   &__wrapper {
     display: flex;
@@ -13,8 +13,31 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .footer {
+    background-color: #fff;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: $tablets) {
+  .footer {
+    width: 100%;
+    max-width: 668px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
 @media (min-width: $netbooks) {
   .footer {
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 0;
     &__wrapper {
       margin-left: 8.33333%;
       margin-right: 8.33333%;

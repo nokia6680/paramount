@@ -1,6 +1,12 @@
 .phrase-item {
   margin-bottom: 10px;
 
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+  }
+
   &__time {
     font: {
       family: $secondary-font;

@@ -93,6 +93,11 @@
 
       transform: translateY(-50%);
     }
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $text-white;
+    }
   }
 
   &__text {
