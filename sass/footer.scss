@@ -5,6 +5,8 @@
   margin: 0 auto;
   padding: 0 20px;
 
+  padding-top: 1.25rem;
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -29,15 +31,31 @@
     max-width: 668px;
     margin: 0 auto;
     padding: 0;
+
+    padding-top: 1.25rem;
   }
 }
 
 @media (min-width: $netbooks) {
   .footer {
     width: 100%;
-    max-width: 992px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0;
+    padding-top: 1.25rem;
+    &__wrapper {
+      margin-left: 8.33333%;
+      margin-right: 8.33333%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .footer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
     &__wrapper {
       margin-left: 8.33333%;
       margin-right: 8.33333%;

@@ -226,31 +226,57 @@ $(document).ready(function(){
   });
 });
 
-var modalSearch = document.querySelector(".top-panel");
-var closeButton = document.querySelector(".top-panel__close");
-var openButton = document.querySelectorAll(".open-btn");
-
-if (modalSearch) {
-  for (var i = 0; i < openButton.length; i++) openButton[i].addEventListener("click", function(event) {
-    event.preventDefault();
-    modalSearch.classList.add("top-panel--on");
+$(document).ready(function(){
+  $('.series').slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    arrows: true,
+    prevArrow: $('.series-prev'),
+    nextArrow: $('.series-next'),
+    responsive: [
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: false,
+          arrows: true,
+          prevArrow: $('.series-prev'),
+          nextArrow: $('.series-next'),
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          dots: false,
+          arrows: true,
+          prevArrow: $('.series-prev'),
+          nextArrow: $('.series-next'),
+        }
+      }
+    ]
   });
+});
 
-  modalSearch.addEventListener("click", function() {
-    modalSearch.classList.remove("top-panel--on");
-  });
+var menuOpener = document.querySelector('.header-nav__toggle');
+var menu = document.querySelector('.nav-list');
 
-  modalSearch.addEventListener("click", function(event) {
-    event.stopPropagation();
-  });
+menuOpener.addEventListener('click', function () {
+  menu.classList.toggle('active');
+  menuOpener.classList.toggle('open');
 
-  closeButton.addEventListener("click", function() {
-    modalSearch.classList.remove("top-panel--on");
-  });
+  return false;
+});
 
-  window.addEventListener("keydown", function(event) {
-    if (event.keyCode === 27) {
-      modalSearch.classList.remove("top-panel--on");
-    }
-  });
-}
+var searchOpener = document.querySelector('.header-nav__search');
+var search = document.querySelector('.header-nav__form');
+
+searchOpener.addEventListener('click', function () {
+  search.classList.toggle('active');
+  searchOpener.classList.toggle('active');
+});

@@ -19,78 +19,139 @@
 </head>
 
 <body>
+	<!--BRANDING-->
+	<a class="branding" href="#"></a>
+	<!--END OF BRANDING BLOCK-->
 	<!--Site Header-->
 	<header class="header">
 		<nav class="header__nav header-nav">
 			<!--Логотип-->
-			<div class="header-nav__logo">
-				<a class="header-nav__link" href="#">
-					<img class="header-nav__img" src="img/logo.svg" alt="Paramount Comedy Logo"/>
-				</a>
-			</div>
+			<a class="header-nav__link" href="#">
+				<img class="header-nav__img" src="img/logo.svg" alt="Paramount Comedy Logo"/>
+			</a>
 			<!--Навигация в шапке для десктопов-->
-			<ul class="header-nav__list nav-list nav-list--desktop">
-				<li class="nav-list__item nav-item">
-					<a class="nav-item__link nav-item__link--serial" href="/serialv/">
-						<span class="nav-item__text">Сериалы</span>
-					</a>
+			<ul class="header-nav__list nav-list">
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="#" target="_self">Сериалы</a>
 				</li>
-
-				<li class="nav-list__item nav-item">
-					<a class="nav-item__link nav-item__link--schedule" href="/program/">
-						<span class="nav-item__text">Телепрограмма</span>
-					</a>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="#" target="_self">Телепрограмма</a>
 				</li>
-
-				<li class="nav-list__item nav-item">
-					<a class="nav-item__link nav-item__link--news" href="/blog/">
-						<span class="nav-item__text">Новости</span>
-					</a>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="#" target="_self">Новости</a>
 				</li>
-
-				<li class="nav-list__item nav-item">
-					<a class="nav-item__link nav-item__link--video" href="/video/">
-						<span class="nav-item__text">Видео</span>
-					</a>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="#" target="_self">Видео</a>
 				</li>
-
-				<li class="nav-list__item nav-item">
-					<a class="nav-item__link nav-item__link--search" href="#">
-						<span class="nav-item__text"><i class="fas fa-search"></i></span>
-					</a>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="whattowatch.html" target="_self">Что посмотреть</a>
 				</li>
 			</ul>
 			<!--Навигация в шапке для мобильных-->
 			<div class="header-nav__controls">
 				<span class="header-nav__menu">Меню</span>
-				<button class="header-nav__opener" type="button"><i class="fas fa-bars"></i></button>
+				<!--Menu btn-->
+				<div class="header-nav__toggle" id="nav-toggle">
+					<span class="header-nav__toggle-span"></span>
+					<span class="header-nav__toggle-span"></span>
+					<span class="header-nav__toggle-span"></span>
+				</div>
+				<!--Поиск-->
+				<button class="header-nav__search" type="button"></button>
 			</div>
-			<ul class="header-nav__list nav-list nav-list--closed">
-				<li class="nav-list__item nav-item">
-					<a class="nav-item__link nav-item__link--serial" href="/serialv/">
-						<span class="nav-item__text">Сериалы</span>
-					</a>
+			<!--Поиск-->
+			<div class="header-nav__form">
+				<form class="search-form" action="https://paramountcomedy.ru/search/" id="searchForm">
+					<div class="form-group">
+						<input class="search-form__input" type="text" name="q" id="searchField" placeholder="Что ищем?">
+					</div>
+				</form>
+			</div>
+		</nav>
+		<div class="header__slider header-slider">
+			<ul class="header-slider__series series">
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Непригодные для свиданий</a>
 				</li>
-
-				<li class="nav-list__item nav-item">
-					<a class="nav-item__link nav-item__link--schedule" href="/program/">
-						<span class="nav-item__text">Телепрограмма</span>
-					</a>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Голдберги</a>
 				</li>
-
-				<li class="nav-list__item nav-item">
-					<a class="nav-item__link nav-item__link--news" href="/blog/">
-						<span class="nav-item__text">Новости</span>
-					</a>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Мамаша</a>
 				</li>
-
-				<li class="nav-list__item nav-item">
-					<a class="nav-item__link nav-item__link--video" href="/video/">
-						<span class="nav-item__text">Видео</span>
-					</a>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Детство Шелдона</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Трудности ассимиляции</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Малькольм в центре внимания</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Ох уж этот папа</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Сообщество</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Два ствола</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Последний настоящий мужчина</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Новенькая</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Живу с моделями</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Ки энд Пил</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Чем всё закончилось</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Бруклин 9-9</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">По-братски</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Стендап от Paramount Comedy</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">В филадельфии всегда солнечно</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Майк и Молли</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Две девицы на мели</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Американская семейка</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Бывает и хуже</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Друзья</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Как я встретил вашу маму</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">>жный парк</a>
+				</li>
+				<li class="series__item">
+					<a class="series__link" href="#" target="_self" title="Название сериала">Теория большого взрыва</a>
 				</li>
 			</ul>
-		</nav>
+			<button class="series-prev" type="button"></button>
+			<button class="series-next" type="button"></button>
+		</div>
 	</header>
 	<!--Site Main-->
 	<main class="main">
